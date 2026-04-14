@@ -270,11 +270,12 @@ img, a, i {
     margin-bottom: 20px;
     line-height: 1.8;
     color: #555;
-    text-align: center;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .about-text.about-page p {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
 }
 
@@ -368,7 +369,8 @@ img, a, i {
     margin-left: auto;
     margin-right: auto;
     color: #555;
-    text-align: center;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .info-section.last {
@@ -1599,7 +1601,7 @@ section#palestrantes::after {
 
 .committee-item {
     padding: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .committee-item strong {
@@ -1647,7 +1649,8 @@ section#palestrantes::after {
 }
 
 .bullet-list {
-    text-align: left;
+    text-align: justify;
+    hyphens: auto;
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -1717,12 +1720,13 @@ section#palestrantes::after {
     background: linear-gradient(135deg, rgba(0, 162, 213, 0.05), rgba(0, 242, 165, 0.05));
     padding: 25px;
     border-radius: 15px;
-    text-align: center;
+    text-align: justify;
+    hyphens: auto;
     border: 1px solid rgba(0, 162, 213, 0.1);
 }
 
 .benefit-card p {
-    text-align: center;
+    text-align: left;
 }
 
 .benefit-card i {
@@ -1794,13 +1798,30 @@ section#palestrantes::after {
      margin-top: 40px;
 }
 
+@media (max-width: 768px) {
+    .timeline-dates {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+}
+
 .date-item {
     background: #fff;
     padding: 20px;
     border-radius: 15px;
     min-width: 250px;
+    flex: 1; /* Permite que cresçam igualmente no desktop */
     border-left: 5px solid #00F2A5;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .date-item {
+        min-width: 100%;
+        width: 100%;
+    }
 }
 
 .dark .date-item {
