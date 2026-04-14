@@ -1,0 +1,298 @@
+[
+  {
+    "dia_evento": 23,
+    "titulo_curto": "Credenciamento + Recepção + Apresentação",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "12:00",
+    "hora_fim": "14:00",
+    "descricao": "<p><strong>Atividades Iniciais:</strong></p><ul style='list-style-type: square; margin-left: 20px; margin-top: 10px; color: #555;'><li>Credenciamento</li><li style='margin-top: 8px;'>Recepção dos participantes</li><li style='margin-top: 8px;'>Apresentação Cultural de Boas Vindas</li></ul>"
+  },
+  {
+    "dia_evento": 23,
+    "titulo_curto": "MINICURSO 1",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "14:00",
+    "hora_fim": "17:30",
+    "descricao": "MINICURSO 1"
+  },
+  {
+    "dia_evento": 23,
+    "titulo_curto": "OFICINA 1",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "14:00",
+    "hora_fim": "17:30",
+    "descricao": "OFICINA 1"
+  },
+  {
+    "dia_evento": 23,
+    "titulo_curto": "PESQBASE - SESSÃO 1",
+    "nome_evento": "PesqBase",
+    "hora_inicio": "14:00",
+    "hora_fim": "17:30",
+    "descricao": "PESQBASE - SESSÃO 1"
+  },
+  {
+    "dia_evento": 23,
+    "titulo_curto": "Construção de Robô",
+    "nome_evento": "RoboBase",
+    "hora_inicio": "14:00",
+    "hora_fim": "17:30",
+    "descricao": "OFICINA - Construção de Robô Seguidor de Linha"
+  },
+  {
+    "dia_evento": 23,
+    "titulo_curto": "PROGBASE - AQUECIMENTO",
+    "nome_evento": "ProgBase",
+    "hora_inicio": "14:00",
+    "hora_fim": "17:30",
+    "descricao": "Sessão de aquecimento para competidores do ProgBase."
+  },
+  {
+    "dia_evento": 23,
+    "titulo_curto": "INTERVALO",
+    "nome_evento": "BREAK",
+    "hora_inicio": "17:30",
+    "hora_fim": "18:30",
+    "descricao": "Intervalo"
+  },
+  {
+    "dia_evento": 23,
+    "titulo_curto": "Cerimônia e Palestra de Abertura",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "18:30",
+    "hora_fim": "19:30",
+    "descricao": "Resumo: As Transformações Digitais e o Desafio da Interiorização da CT&I."
+  },
+  {
+    "dia_evento": 23,
+    "titulo_curto": "Palestra com Pró-Reitores",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "19:30",
+    "hora_fim": "20:30",
+    "descricao": "<p style='margin-bottom: 15px;'>Mesa de Honra e discussões aprofundadas com presenças confirmadas:</p><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #00A2D5;'><i class='fa-solid fa-user-tie' style='color:#00A2D5; margin-right:5px;'></i> <strong>Pro-reitor José Osman dos Santos</strong><br><small style='color:#666; margin-left: 22px;'>IFS - Reitoria/PROPEX</small></li><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #00F2A5;'><i class='fa-solid fa-user-tie' style='color:#00F2A5; margin-right:5px;'></i> <strong>Pro-reitora Eunice Palmeira da Silva</strong><br><small style='color:#666; margin-left: 22px;'>IFAL - Reitoria/PRPPI</small></li><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #FF6B6B;'><i class='fa-solid fa-user-tie' style='color:#FF6B6B; margin-right:5px;'></i> <strong>Pro-reitor Francisco de Assis de Lima Gama</strong><br><small style='color:#666; margin-left: 22px;'>IF Sertão-PE - Reitoria/PROPIP</small></li></ul>"
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "MINICURSO 2",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "08:00",
+    "hora_fim": "10:00",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "OFICINA 2",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "08:00",
+    "hora_fim": "10:00",
+    "descricao": "Construção de aplicações interdisciplinares de realidade aumentada com navegadores Web"
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "OFICINA 3",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "08:00",
+    "hora_fim": "10:00",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "DIGIBASE (OFICINA)",
+    "nome_evento": "Meninas Digitais",
+    "hora_inicio": "08:00",
+    "hora_fim": "10:30",
+    "descricao": "Construindo projetos de diversidade de gênero na Computação: uma abordagem prática"
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "PESQBASE - SESSÃO 2",
+    "nome_evento": "PesqBase",
+    "hora_inicio": "08:00",
+    "hora_fim": "12:00",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "OFICINA E TREINOS",
+    "nome_evento": "RoboBase",
+    "hora_inicio": "08:00",
+    "hora_fim": "12:00",
+    "descricao": "OFICINA, DEMONSTRAÇÕES e TREINOS DA ROBOBASE"
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "MOSTRA DA XBASE",
+    "nome_evento": "XBase",
+    "hora_inicio": "08:00",
+    "hora_fim": "12:00",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "PALESTRA 2",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "10:00",
+    "hora_fim": "12:00",
+    "descricao": "<p><strong>Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica - A Experiência do Projeto ERTA</strong></p><br><p><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> Prof. José Paulo Gomes Brazão - Universidade da Madeira (UMa) - Funchal, Portugal</p>"
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "INTERVALO DO ALMOÇO",
+    "nome_evento": "BREAK",
+    "hora_inicio": "12:00",
+    "hora_fim": "13:30",
+    "descricao": "Intervalo para almoço."
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "PALESTRA 3",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "13:30",
+    "hora_fim": "15:00",
+    "descricao": "<p><strong>ECA Digital, LGPD e Desinformação: Proteger, Educar e Legislar na Era da Cidadania Digital</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Juliana de Albuquerque Gonçalves Saraiva</strong><br><small>Universidade Federal da Paraíba (UFPB) | OAB/RN</small></li><li><i class='fa-solid fa-user-tie' style='color:#00F2A5;'></i> <strong>Cleidson Jacinto de Freitas</strong><br><small>IFAL - Campus Maragogi</small></li></ul>"
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "OFICINA 4",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "15:00",
+    "hora_fim": "17:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "OFICINA 5",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "15:00",
+    "hora_fim": "17:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "OFICINA 6",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "15:00",
+    "hora_fim": "17:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "COMPETIÇÕES DA ROBOBASE",
+    "nome_evento": "RoboBase",
+    "hora_inicio": "13:30",
+    "hora_fim": "17:30",
+    "descricao": "Modalidade Sumô e Seguidor de Linha"
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "MOSTRA DA XBASE",
+    "nome_evento": "XBase",
+    "hora_inicio": "13:30",
+    "hora_fim": "17:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "PESQBASE - SESSÃO 3",
+    "nome_evento": "PesqBase",
+    "hora_inicio": "15:30",
+    "hora_fim": "17:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "WEIBASE - SESSÃO 1",
+    "nome_evento": "WeiBase",
+    "hora_inicio": "15:30",
+    "hora_fim": "17:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "MINICURSO 3",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "08:30",
+    "hora_fim": "11:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "OFICINA 7",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "08:30",
+    "hora_fim": "11:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "OFICINA 8",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "08:30",
+    "hora_fim": "11:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "PESQBASE - SESSÃO 4",
+    "nome_evento": "PesqBase",
+    "hora_inicio": "08:30",
+    "hora_fim": "12:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "WEIBASE - SESSÃO 2",
+    "nome_evento": "WeiBase",
+    "hora_inicio": "08:30",
+    "hora_fim": "12:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "COMPETIÇÃO PROGBASE",
+    "nome_evento": "ProgBase",
+    "hora_inicio": "08:30",
+    "hora_fim": "12:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "MENINAS DIGIBASE",
+    "nome_evento": "Meninas Digitais",
+    "hora_inicio": "08:30",
+    "hora_fim": "12:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "INTERVALO DO ALMOÇO",
+    "nome_evento": "BREAK",
+    "hora_inicio": "12:30",
+    "hora_fim": "13:30",
+    "descricao": "Intervalo para almoço."
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "PALESTRA 4",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "13:30",
+    "hora_fim": "15:30",
+    "descricao": "<p><strong>Mais Ciência na Escola: Cultura Maker e Divulgação Científica como Estratégias de Inclusão Digital no Interior do Nordeste</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Flávia Bartira Pedro da Silva Almeida</strong><br><small>Instituto Federal de Alagoas (IFAL)</small></li><li><i class='fa-solid fa-user-tie' style='color:#00F2A5;'></i> <strong>Pedro Lemos de Almeida Júnior</strong><br><small>Universidade Federal Rural de Pernambuco (UFRPE)</small></li></ul>"
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "PESQBASE - SESSÃO 5",
+    "nome_evento": "PesqBase",
+    "hora_inicio": "13:30",
+    "hora_fim": "15:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "Premiação + Encerramento + ERBASE 2027",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "15:30",
+    "hora_fim": "17:30",
+    "descricao": "Solenidade de Premiação das Competições, Encerramento Oficial e Lançamento da ERBASE 2027."
+  }
+]

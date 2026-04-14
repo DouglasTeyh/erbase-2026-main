@@ -1,0 +1,8 @@
+.idea/
+
+img.png
+
+backend/node_modules/
+backend/uploads/
+pages/speakers/*.html
+.env

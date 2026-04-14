@@ -1,0 +1,275 @@
+@keyframes slideDown {
+    from {
+        top: -80px;
+        opacity: 0;
+    }
+    to {
+        top: 20px;
+        opacity: 1;
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1350px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 18px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border-radius: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: background 0.4s ease, backdrop-filter 0.4s ease, -webkit-backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+    animation: slideDown 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+.navbar.navbar-solid {
+    background: #ffffff;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-logo img {
+    height: 55px; /* Logo maior */
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover img {
+    transform: scale(1.05);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 0.8rem; /* Espaçamento ajustado entre os links */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0;
+    position: relative;
+    flex-shrink: 0; /* Impede que o item encolha */
+}
+
+.nav-link {
+    color: #444;
+    text-decoration: none;
+    font-size: 1.15rem; /* Fonte um pouco maior */
+    font-weight: 600;
+    padding: 12px 28px; /* Área de clique maior */
+    border-radius: 40px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap; /* Impede que o texto quebre */
+}
+
+/* Efeito de Hover Interativo */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: linear-gradient(135deg, #00A2D5, #00F2A5);
+    transition: width 0.3s ease;
+    border-radius: 3px;
+    opacity: 0;
+}
+
+.nav-link:hover {
+    color: #00A2D5;
+    background-color: rgba(0, 162, 213, 0.08);
+    transform: translateY(-2px);
+}
+
+.nav-link:hover::before {
+    width: 40%;
+    opacity: 1;
+}
+
+/* Estilo para página ativa/selecionada */
+.nav-link.active {
+    color: #000;
+    background: linear-gradient(135deg, #00A2D5, #00F2A5);
+    box-shadow: 0 4px 15px rgba(0, 162, 213, 0.3);
+    transform: translateY(-2px);
+}
+
+.nav-link.active:hover {
+    box-shadow: 0 6px 18px rgba(0, 162, 213, 0.4);
+    color: #000;
+}
+
+.nav-link.active::before {
+    display: none; /* remove o traço inferior se estiver preenchido */
+}
+
+/* Menu Hamburguer (escondido no desktop) */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 1001;
+    background: transparent !important; /* Remove o fundo do botão completamente */
+    border: none !important; /* Remove a borda do botão */
+    outline: none !important; /* Remove o contorno ao clicar */
+    padding: 0; /* Remove o padding padrão de botões */
+    appearance: none; /* Remove o estilo nativo do navegador */
+    -webkit-appearance: none;
+}
+
+.hamburger-menu:focus, .hamburger-menu:active {
+    outline: none !important;
+    background: transparent !important;
+}
+
+.hamburger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1200px) {
+    /* Alterado de 1024px para 1200px */
+    .navbar {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 20px;
+        border-radius: 0;
+        top: 0;
+        background: #ffffff; /* Sólido no mobile */
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        animation: none; /* Remove a animação de slideDown */
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(135deg, #00A2D5, #00F2A5) 1;
+    }
+
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-logo img {
+        height: 40px;
+    }
+
+    /* Mostrar hamburger menu */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* Menu lateral flutuante ou sanfona (Sanfona abaixo do header) */
+    .nav-menu {
+        position: absolute;
+        top: 100%; /* Imediatamente abaixo da navbar */
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.98); /* Opacidade aumentada */
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(0, 162, 213, 0.1);
+
+        /* Efeito de revelar sanfona */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+
+        /* Reset de outras propriedades */
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .nav-menu.active {
+        max-height: 400px; /* Altura máxima suficiente para os links */
+    }
+
+    .nav-item {
+        width: 100%;
+        border-top: 1px solid #f5f5f5;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 15px 20px;
+        width: 100%;
+        display: block;
+        border-radius: 0;
+        white-space: normal; /* Permite quebrar o texto novamente no menu mobile */
+    }
+
+    .nav-link::before {
+        display: none;
+    }
+
+    .nav-link:hover, .nav-link.active {
+        transform: none;
+        box-shadow: none;
+        background: rgba(0, 162, 213, 0.08);
+        color: #00A2D5;
+    }
+
+    /* Animação do ícone do hamburger */
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo img {
+        height: 35px;
+    }
+}

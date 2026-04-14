@@ -1,0 +1,217 @@
+<section class="page-section" style="padding-top: 120px; background-color: #1a1a1a; min-height: 100vh; position: relative;">
+
+    <div id="admin-login-overlay" style="position: absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index: 100; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+        <div style="background: #222; padding: 40px; border-radius: 15px; border: 1px solid #00A2D5; text-align:center; max-width: 400px; width: 90%; box-shadow: 0 10px 40px rgba(0,162,213,0.2);">
+            <h2 style="color: #00F2A5; margin-bottom: 25px; font-weight: 800;">Acesso Restrito</h2>
+            <input type="text" id="admin-user" placeholder="Usuário" class="admin-input login-input">
+            <input type="password" id="admin-pass" placeholder="Senha" class="admin-input login-input" style="margin-bottom: 25px;">
+            <button id="admin-login-btn" class="btn-primary">Entrar no Sistema</button>
+        </div>
+    </div>
+
+    <div class="container-large" id="admin-container" style="display:none; padding-bottom: 60px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; flex-wrap: wrap; gap: 15px;">
+            <h1 style="color: #fff; font-size: 2.2rem; font-weight: 800;"><i class="fa-solid fa-gear" style="color: #00A2D5;"></i> Painel de Controle</h1>
+            <button id="admin-logout-btn" class="btn-danger"><i class="fa-solid fa-right-from-bracket"></i> Sair do Painel</button>
+        </div>
+
+        <div style="background: #fff; border-radius: 20px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+
+            <div class="schedule-tabs" style="margin-bottom: 40px; display:inline-flex; width: 100%; max-width: 600px;">
+                <button class="tab-btn active" style="flex: 1;" onclick="window.switchAdminTab('prog')"><i class="fa-regular fa-calendar-days"></i> Programação</button>
+                <button class="tab-btn" style="flex: 1;" onclick="window.switchAdminTab('speak')"><i class="fa-solid fa-users"></i> Palestrantes</button>
+            </div>
+
+            <div id="admin-tab-prog" style="display:block;">
+                <div class="admin-header-actions">
+                    <h3 style="color: #222; font-size: 1.8rem;">Gerenciar Eventos</h3>
+                    <div class="admin-btn-group">
+                        <button onclick="window.editEvent(-1)" class="btn-success"><i class="fa-solid fa-plus"></i> Novo Evento</button>
+                    </div>
+                </div>
+                <ul id="admin-prog-list" class="admin-list">
+
+                </ul>
+            </div>
+
+            <div id="admin-tab-speak" style="display:none;">
+                <div class="admin-header-actions">
+                    <h3 style="color: #222; font-size: 1.8rem;">Gerenciar Palestrantes</h3>
+                    <div class="admin-btn-group">
+                        <button onclick="window.editSpeaker(-1)" class="btn-success"><i class="fa-solid fa-user-plus"></i> Novo Palestrante</button>
+                    </div>
+                </div>
+                <ul id="admin-speak-list" class="admin-list">
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div id="admin-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:2000; align-items:center; justify-content:center; padding: 20px; box-sizing: border-box; backdrop-filter: blur(5px);">
+    <div class="admin-modal-content scroll-animate is-visible">
+        <div class="admin-modal-header">
+            <h2 id="modal-title" style="margin: 0; color:#222; font-size: 1.6rem;"><i class="fa-solid fa-pen-to-square" style="color: #00A2D5;"></i> Editar</h2>
+            <button onclick="window.closeModal()" class="admin-modal-close">&times;</button>
+        </div>
+
+        <div id="modal-form-container" class="admin-modal-body custom-scrollbar"></div>
+
+        <div class="admin-modal-footer">
+            <button onclick="window.closeModal()" class="btn-secondary">Cancelar</button>
+            <button onclick="window.saveModalData()" class="btn-primary"><i class="fa-solid fa-check"></i> Salvar</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilos modernizados para o painel de administração */
+    .admin-list {
+        list-style:none;
+        padding:0;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .admin-list li {
+        background: #ffffff;
+        padding: 20px 25px;
+        border-radius: 12px;
+        border-left: 5px solid #00A2D5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        border-top: 1px solid #eee;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .admin-list li:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 162, 213, 0.1);
+    }
+
+    .admin-header-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        gap: 15px;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 15px;
+    }
+
+    .admin-btn-group {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    /* Botões Modernos */
+    .btn-primary { background: linear-gradient(135deg, #00A2D5, #00F2A5); color: #111; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 8px; }
+    .btn-primary:hover { box-shadow: 0 5px 15px rgba(0, 242, 165, 0.4); transform: translateY(-2px); }
+
+    .btn-success { background: #28a745; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 8px;}
+    .btn-success:hover { background: #218838; box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4); transform: translateY(-2px); }
+
+    .btn-danger { background: #dc3545; color: #fff; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 8px;}
+    .btn-danger:hover { background: #c82333; box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4); transform: translateY(-2px); }
+
+    .btn-secondary { background: #e9ecef; color: #444; border: 1px solid #ddd; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; }
+    .btn-secondary:hover { background: #e2e6ea; }
+
+    .btn-edit { background: #ffc107; color: #111; border: none; padding: 8px 15px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: all 0.2s ease; margin-right: 5px;}
+    .btn-edit:hover { background: #e0a800; }
+
+    .btn-del { background: #dc3545; color: #fff; border: none; padding: 8px 15px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: all 0.2s ease; }
+    .btn-del:hover { background: #c82333; }
+
+    /* Inputs e Forms */
+    .admin-input { width: 100%; padding: 12px 15px; margin-top: 8px; margin-bottom: 20px; border: 2px solid #e0e0e0; border-radius: 8px; box-sizing: border-box; font-family: inherit; font-size: 1rem; transition: border-color 0.3s ease; background: #fafafa;}
+    .admin-input:focus { border-color: #00A2D5; outline: none; background: #fff;}
+    .login-input { background: #333; color: #fff; border-color: #444; }
+    .login-input:focus { border-color: #00F2A5; background: #222; color: #fff;}
+
+    .admin-label { font-weight: bold; color: #444; font-size: 0.95rem; display: block; margin-bottom: 2px; }
+
+    /* Grid do Formulário dentro do Modal */
+    .admin-form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 20px;
+    }
+
+    @media (max-width: 600px) {
+        .admin-form-grid {
+            grid-template-columns: 1fr;
+        }
+        .admin-form-grid > div {
+            grid-column: span 1 !important;
+        }
+        .admin-header-actions {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    /* Estrutura do Modal */
+    .admin-modal-content {
+        background: #ffffff;
+        width: 100%;
+        max-width: 750px;
+        max-height: 90vh;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .admin-modal-header {
+        padding: 25px 30px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f8f9fa;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .admin-modal-close {
+        background: transparent;
+        border: none;
+        font-size: 2rem;
+        line-height: 1;
+        color: #999;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+    .admin-modal-close:hover { color: #dc3545; }
+
+    .admin-modal-body {
+        padding: 30px;
+        overflow-y: auto;
+    }
+
+    .admin-modal-footer {
+        padding: 20px 30px;
+        border-top: 1px solid #eee;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        background: #f8f9fa;
+        border-radius: 0 0 20px 20px;
+    }
+
+    /* Scrollbar personalizada para o modal */
+    .custom-scrollbar::-webkit-scrollbar { width: 8px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 4px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #00A2D5; }
+</style>

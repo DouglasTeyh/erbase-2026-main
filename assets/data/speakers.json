@@ -1,0 +1,122 @@
+[
+  {
+    "id": "flavia-bartira",
+    "nome": "Flávia Bartira",
+    "ocupacao": "IFAL",
+    "breve_descricao": "Conferencista",
+    "tema": "Mais Ciência na Escola: Cultura Maker e Divulgação Científica como Estratégias de Inclusão Digital no Interior do Nordeste.",
+    "biografia": "Atua como Conferencista na Mesa Redonda intitulada 'Mais Ciência na Escola: Cultura Maker e Divulgação Científica como Estratégias de Inclusão Digital no Interior do Nordeste'.",
+    "imagem": "assets/img/speakers/flavia-bartira.png",
+    "links": {}
+  },
+  {
+    "id": "pedro-lemos",
+    "nome": "Pedro Lemos",
+    "ocupacao": "UFRPE",
+    "breve_descricao": "Conferencista",
+    "tema": "Mais Ciência na Escola: Cultura Maker e Divulgação Científica como Estratégias de Inclusão Digital no Interior do Nordeste.",
+    "biografia": "Atua como Conferencista na Mesa Redonda intitulada 'Mais Ciência na Escola: Cultura Maker e Divulgação Científica como Estratégias de Inclusão Digital no Interior do Nordeste'.",
+    "imagem": "assets/img/speakers/pedro-lemos.png",
+    "links": {}
+  },
+  {
+    "id": "juliana-saraiva",
+    "nome": "Juliana Saraiva",
+    "ocupacao": "UFPB | OAB/RN",
+    "breve_descricao": "Debatedora/Conferencista",
+    "tema": "ECA Digital, LGPD e Desinformação: Proteger, Educar e Legislar na Era da Cidadania Digital.",
+    "biografia": "Atua como Debatedora/Conferencista na Mesa Redonda 'ECA Digital, LGPD e Desinformação: Proteger, Educar e Legislar na Era da Cidadania Digital'.",
+    "imagem": "assets/img/speakers/juliana-saraiva.png",
+    "links": {}
+  },
+  {
+    "id": "cleidson-freitas",
+    "nome": "Cleidson Freitas",
+    "ocupacao": "IFAL - Campus Maragogi",
+    "breve_descricao": "Debatedor/Conferencista",
+    "tema": "ECA Digital, LGPD e Desinformação: Proteger, Educar e Legislar na Era da Cidadania Digital.",
+    "biografia": "Atua como Debatedor/Conferencista na Mesa Redonda 'ECA Digital, LGPD e Desinformação: Proteger, Educar e Legislar na Era da Cidadania Digital'.",
+    "imagem": "assets/img/speakers/cleidson-freitas.png",
+    "links": {}
+  },
+  {
+    "id": "jose-osman",
+    "nome": "José Osman",
+    "ocupacao": "IFS - Reitoria/PROPEX",
+    "breve_descricao": "Conferencista no Painel",
+    "tema": "As Transformações Digitais e o Desafio da Interiorização da CT&I.",
+    "biografia": "Atua como Conferencista no Painel 'As Transformações Digitais e o Desafio da Interiorização da CT&I'.",
+    "imagem": "assets/img/speakers/jose-osman.png",
+    "links": {}
+  },
+  {
+    "id": "eunice-palmeira",
+    "nome": "Eunice Palmeira",
+    "ocupacao": "IFAL - Reitoria/PRPPI",
+    "breve_descricao": "Conferencista no Painel",
+    "tema": "As Transformações Digitais e o Desafio da Interiorização da CT&I.",
+    "biografia": "Atua como Conferencista no Painel 'As Transformações Digitais e o Desafio da Interiorização da CT&I'.",
+    "imagem": "assets/img/speakers/eunice-palmeira.png",
+    "links": {}
+  },
+  {
+    "id": "francisco-gama",
+    "nome": "Francisco Gama",
+    "ocupacao": "IF Sertão PE - Reitoria/PROPIP",
+    "breve_descricao": "Conferencista no Painel",
+    "tema": "As Transformações Digitais e o Desafio da Interiorização da CT&I.",
+    "biografia": "Atua como Conferencista no Painel 'As Transformações Digitais e o Desafio da Interiorização da CT&I'.",
+    "imagem": "assets/img/speakers/francisco-gama.png",
+    "links": {}
+  },
+  {
+    "id": "sandro-juca",
+    "nome": "Sandro Jucá",
+    "ocupacao": "IFCE - Campus Fortaleza",
+    "breve_descricao": "Ministrante da Oficina",
+    "tema": "Construção de aplicações interdisciplinares de realidade aumentada com navegadores Web.",
+    "biografia": "Atua como Ministrante da Oficina 'Construção de aplicações interdisciplinares de realidade aumentada com navegadores Web'.",
+    "imagem": "assets/img/speakers/sandro-juca.png",
+    "links": {}
+  },
+  {
+    "id": "gabriela-vasconcelos",
+    "nome": "Gabriela Vasconcelos",
+    "ocupacao": "IFAL - Campus Santana do Ipanema",
+    "breve_descricao": "Ministrante da Oficina",
+    "tema": "Construindo projetos de diversidade de gênero na Computação: uma abordagem prática.",
+    "biografia": "Atua como Ministrante da Oficina 'Construindo projetos de diversidade de gênero na Computação: uma abordagem prática'.",
+    "imagem": "assets/img/speakers/gabriela-vasconcelos.png",
+    "links": {}
+  },
+  {
+    "id": "jose-paulo-brazao",
+    "nome": "José Paulo Brazão",
+    "ocupacao": "Universidade da Madeira (UMa) - Funchal, Portugal",
+    "breve_descricao": "Palestrante",
+    "tema": "Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Education Básica - A Experiência do Projeto ERTA.",
+    "biografia": "Atua como Palestrante na sessão 'Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica - A Experiência do Projeto ERTA'.",
+    "imagem": "assets/img/speakers/jose-paulo-brazao.png",
+    "links": {}
+  },
+  {
+    "id": "antonio-brotas",
+    "nome": "Antonio Brotas",
+    "ocupacao": "Fundação Oswaldo Cruz - Fiocruz Bahia",
+    "breve_descricao": "Conferencista",
+    "tema": "Mais Ciência na Escola: Cultura Maker e Divulgação Científica como Estratégias de Inclusão Digital no Interior do Nordeste.",
+    "biografia": "Atua como Conferencista na Mesa Redonda intitulada 'Mais Ciência na Escola: Cultura Maker e Divulgação Científica como Estratégias de Inclusão Digital no Interior do Nordeste'.",
+    "imagem": "assets/img/speakers/antonio-brotas.png",
+    "links": {}
+  },
+  {
+    "id": "lucia-amante",
+    "nome": "Lúcia Amante",
+    "ocupacao": "Universidade Aberta (UAb) - LE@D, Lisboa, Portugal",
+    "breve_descricao": "Conferencista / Painelista",
+    "tema": "Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica - A Experiência do Projeto ERTA.",
+    "biografia": "Atua como Conferencista / Painelista na Mesa Redonda 'Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica - A Experiência do Projeto ERTA'.",
+    "imagem": "assets/img/speakers/lucia-amante.png",
+    "links": {}
+  }
+]
