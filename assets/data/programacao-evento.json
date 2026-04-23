@@ -98,7 +98,7 @@
   {
     "dia_evento": 24,
     "titulo_curto": "DIGIBASE (OFICINA)",
-    "nome_evento": "Meninas Digitais",
+    "nome_evento": "Meninas DigiBase",
     "hora_inicio": "08:00",
     "hora_fim": "10:30",
     "descricao": "Construindo projetos de diversidade de gênero na Computação: uma abordagem prática"
@@ -258,7 +258,7 @@
   {
     "dia_evento": 25,
     "titulo_curto": "MENINAS DIGIBASE",
-    "nome_evento": "Meninas Digitais",
+    "nome_evento": "Meninas DigiBase",
     "hora_inicio": "08:30",
     "hora_fim": "12:30",
     "descricao": ""
