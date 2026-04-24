@@ -195,6 +195,17 @@
     transition: color 0.3s ease;
 }
 
-.footer-link:hover {
-    color: #00F2A5;
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .footer-social-link {
+        justify-content: flex-start;
+    }
 }
