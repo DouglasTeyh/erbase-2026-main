@@ -147,7 +147,7 @@ async function loadAndRenderSpeakersCarousel() {
             card.innerHTML = `
                 <div class="speaker-card-inner">
                     <div class="speaker-card-front">
-                        <img src="${spk.imagem}" alt="${spk.nome}" class="speaker-img">
+                        <img src="${spk.imagem}" alt="${spk.nome}" class="speaker-img" style="${spk.posicao_imagem ? `object-position: ${spk.posicao_imagem};` : ''}">
                         <div class="speaker-info">
                             <h4 class="speaker-name">${spk.nome}</h4>
                             <p class="speaker-role">${spk.ocupacao}</p>

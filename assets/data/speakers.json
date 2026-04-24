@@ -118,5 +118,16 @@
     "biografia": "Atua como Conferencista / Painelista na Mesa Redonda 'Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica - A Experiência do Projeto ERTA'.",
     "imagem": "assets/img/speakers/lucia-amante.png",
     "links": {}
+  },
+  {
+    "id": "simone-lucena",
+    "nome": "Simone de Lucena Ferreira",
+    "ocupacao": "UFS - Programa de Pós-Graduação em Educação (PPGED)",
+    "breve_descricao": "Conferencista / Painelista",
+    "tema": "Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica – A Experiência do Projeto ERTA",
+    "biografia": "Atua como Conferencista / Painelista na Mesa Redonda 'Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica – A Experiência do Projeto ERTA'.",
+    "imagem": "assets/img/speakers/simone-lucena.png",
+    "posicao_imagem": "center",
+    "links": {}
   }
 ]
