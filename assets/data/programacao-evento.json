@@ -69,7 +69,7 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "19:30",
     "hora_fim": "20:30",
-    "descricao": "<p style='margin-bottom: 15px;'>Mesa de Honra e discussões aprofundadas com presenças confirmadas:</p><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #00A2D5;'><i class='fa-solid fa-user-tie' style='color:#00A2D5; margin-right:5px;'></i> <strong>Pro-reitor José Osman dos Santos</strong><br><small style='color:#666; margin-left: 22px;'>IFS - Reitoria/PROPEX</small></li><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #00F2A5;'><i class='fa-solid fa-user-tie' style='color:#00F2A5; margin-right:5px;'></i> <strong>Pro-reitora Eunice Palmeira da Silva</strong><br><small style='color:#666; margin-left: 22px;'>IFAL - Reitoria/PRPPI</small></li><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #FF6B6B;'><i class='fa-solid fa-user-tie' style='color:#FF6B6B; margin-right:5px;'></i> <strong>Pro-reitor Francisco de Assis de Lima Gama</strong><br><small style='color:#666; margin-left: 22px;'>IF Sertão-PE - Reitoria/PROPIP</small></li></ul>"
+    "descricao": "<p style='margin-bottom: 15px;'>Mesa de Honra e discussões aprofundadas com presenças confirmadas:</p><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #00A2D5;'><i class='fa-solid fa-user-tie' style='color:#00A2D5; margin-right:5px;'></i> <strong>Meirejane Remigio</strong><br><small style='color:#666; margin-left: 22px;'>SECTI/AL</small></li><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #00F2A5;'><i class='fa-solid fa-user-tie' style='color:#00F2A5; margin-right:5px;'></i> <strong>Pro-reitora Eunice Palmeira da Silva</strong><br><small style='color:#666; margin-left: 22px;'>IFAL - Reitoria/PRPPI</small></li><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #FF6B6B;'><i class='fa-solid fa-user-tie' style='color:#FF6B6B; margin-right:5px;'></i> <strong>Pro-reitor Francisco de Assis de Lima Gama</strong><br><small style='color:#666; margin-left: 22px;'>IF Sertão-PE - Reitoria/PROPIP</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -211,25 +211,33 @@
     "dia_evento": 25,
     "titulo_curto": "MINICURSO 3",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "08:30",
-    "hora_fim": "11:30",
+    "hora_inicio": "08:00",
+    "hora_fim": "10:00",
     "descricao": ""
   },
   {
     "dia_evento": 25,
     "titulo_curto": "OFICINA 7",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "08:30",
-    "hora_fim": "11:30",
+    "hora_inicio": "08:00",
+    "hora_fim": "10:00",
     "descricao": ""
   },
   {
     "dia_evento": 25,
     "titulo_curto": "OFICINA 8",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "08:30",
-    "hora_fim": "11:30",
+    "hora_inicio": "08:00",
+    "hora_fim": "10:00",
     "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "PALESTRA 4",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "10:30",
+    "hora_fim": "12:00",
+    "descricao": "<p><strong>Ecossistemas de inovação no Nordeste: do Porto Digital ao interior – desafios e oportunidades de interiorização da economia digital</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Heraldo Ourem</strong><br><small>Porto Digital</small></li></ul>"
   },
   {
     "dia_evento": 25,
@@ -273,11 +281,11 @@
   },
   {
     "dia_evento": 25,
-    "titulo_curto": "PALESTRA 4",
+    "titulo_curto": "PALESTRA 5",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "13:30",
     "hora_fim": "15:30",
-    "descricao": "<p><strong>Mais Ciência na Escola: Cultura Maker e Divulgação Científica como Estratégias de Inclusão Digital no Interior do Nordeste</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Flávia Bartira Pedro da Silva Almeida</strong><br><small>Instituto Federal de Alagoas (IFAL)</small></li><li><i class='fa-solid fa-user-tie' style='color:#00F2A5;'></i> <strong>Pedro Lemos de Almeida Júnior</strong><br><small>Universidade Federal Rural de Pernambuco (UFRPE)</small></li></ul>"
+    "descricao": "<p><strong>Mais Ciência na Escola: Cultura Maker e Divulgação Científica como Estratégias de Inclusão Digital no Interior do Nordeste</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Flávia Bartira Pedro da Silva Almeida</strong><br><small>Instituto Federal de Alagoas (IFAL)</small></li><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00F2A5;'></i> <strong>Pedro Lemos de Almeida Júnior</strong><br><small>Universidade Federal Rural de Pernambuco (UFRPE)</small></li><li><i class='fa-solid fa-user-tie' style='color:#FF6B6B;'></i> <strong>Antonio Brotas</strong><br><small>Fundação Oswaldo Cruz - Fiocruz Bahia</small></li></ul>"
   },
   {
     "dia_evento": 25,

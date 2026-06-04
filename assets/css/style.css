@@ -133,7 +133,7 @@ main {
     width: 100%;
     height: 100%;
     /* Gradiente com fade na saída inferior sincronizado com o fundo #f7f7f7 */
-    background: linear-gradient(to bottom, rgba(247, 247, 247, 0.4) 0%, rgba(247, 247, 247, 0.6) 75%, #f7f7f7 100%);
+    background: linear-gradient(to bottom, rgba(247, 247, 247, 0.75) 0%, rgba(247, 247, 247, 0.90) 75%, #f7f7f7 100%);
     z-index: 1;
 }
 
@@ -481,6 +481,11 @@ img, a, i {
     gap: 30px;
     width: 100%;
     justify-items: center;
+}
+
+/* Centraliza o 7º card caso seja o último da grade 3x3 no desktop */
+.cards-grid .event-card:nth-child(7):nth-last-child(1) {
+    grid-column: 2;
 }
 
 /* Removido layout antigo de coluna única no mobile extremo em favor do scroll horizontal unificado */
@@ -2786,4 +2791,86 @@ section#palestrantes::after {
 
     .hero-text-mask { justify-content: flex-start; }
     .epic-hero-right { text-align: left; padding: 0 20px; }
+}
+
+/* --- COUNTDOWN TIMER --- */
+.countdown-wrapper {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+    width: 90%;
+    max-width: 800px;
+}
+
+.countdown-wrapper h3 {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #222;
+    font-weight: 800;
+}
+
+.countdown-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    background: rgba(0,0,0,0.5);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 242, 165, 0.4);
+    backdrop-filter: blur(5px);
+    min-width: 70px;
+    flex: 1;
+    max-width: 100px;
+}
+
+.time-box .time-val {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: bold;
+    display: block;
+    color: #00F2A5;
+}
+
+.time-box .time-label {
+    font-size: clamp(0.65rem, 2vw, 0.8rem);
+    text-transform: uppercase;
+    color: #ccc;
+}
+
+@media (max-width: 480px) {
+    .countdown-grid {
+        gap: 8px;
+    }
+    .time-box {
+        padding: 8px 5px;
+        min-width: 55px;
+    }
+    .countdown-wrapper {
+        bottom: 20px;
+    }
+}
+
+/* Responsive Typography for Hero and Large Titles */
+.responsive-heading-xl {
+    font-size: 3.5rem !important;
+}
+.responsive-heading-lg {
+    font-size: 2.8rem !important;
+}
+@media (max-width: 768px) {
+    .responsive-heading-xl {
+        font-size: 2.2rem !important;
+    }
+    .responsive-heading-lg {
+        font-size: 1.8rem !important;
+    }
 }

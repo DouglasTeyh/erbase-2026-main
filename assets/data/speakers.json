@@ -40,13 +40,13 @@
     "links": {}
   },
   {
-    "id": "jose-osman",
-    "nome": "José Osman",
-    "ocupacao": "IFS - Reitoria/PROPEX",
+    "id": "meirejane-remigio",
+    "nome": "Meirejane Remigio",
+    "ocupacao": "SECTI/AL",
     "breve_descricao": "Conferencista no Painel",
     "tema": "As Transformações Digitais e o Desafio da Interiorização da CT&I.",
-    "biografia": "Atua como Conferencista no Painel 'As Transformações Digitais e o Desafio da Interiorização da CT&I'.",
-    "imagem": "assets/img/speakers/jose-osman.png",
+    "biografia": "Meirejane Remígio é Secretária de Estado da Ciência, da Tecnologia e da Inovação de Alagoas. Na ERBASE 2026, participará como conferencista no painel 'As Transformações Digitais e o Desafio da Interiorização da CT&I', integrando a conferência de abertura ao lado da Profa. Eunice Palmeira, Pró-Reitora de Pesquisa, Pós-Graduação e Inovação do IFAL, e do Prof. Francisco de Assis de Lima Gama, Pró-Reitor de Pesquisa do IF Sertão-PE.",
+    "imagem": "assets/img/speakers/meirejane-remigio.png",
     "links": {}
   },
   {
@@ -128,6 +128,16 @@
     "biografia": "Atua como Conferencista / Painelista na Mesa Redonda 'Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica – A Experiência do Projeto ERTA'.",
     "imagem": "assets/img/speakers/simone-lucena.png",
     "posicao_imagem": "center",
+    "links": {}
+  },
+  {
+    "id": "heraldo-ramos",
+    "nome": "Heraldo Ourem",
+    "ocupacao": "Porto Digital",
+    "breve_descricao": "Palestrante",
+    "tema": "Inovação e Competitividade Empresarial",
+    "biografia": "Atua como Diretor de Inovação e Competitividade Empresarial do Núcleo de Gestão do Porto Digital.",
+    "imagem": "assets/img/speakers/heraldo-ramos.png",
     "links": {}
   }
 ]

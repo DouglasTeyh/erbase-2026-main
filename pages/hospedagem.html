@@ -1,0 +1,300 @@
+<style>
+    /* Premium Styles for Hospedagem Page */
+    .hospedagem-hero {
+        padding: 120px 20px 80px 20px;
+        background: linear-gradient(135deg, rgba(0, 26, 77, 0.9) 0%, rgba(0, 162, 213, 0.85) 100%), url('assets/img/sobre/sobre-campus-2.jpeg') center/cover fixed;
+        position: relative;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .hospedagem-hero::before {
+        content: '';
+        position: absolute;
+        bottom: 0; left: 0; right: 0; height: 100px;
+        background: linear-gradient(to top, #f8fafc, transparent);
+    }
+
+    .premium-card {
+        background: white;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        border: 1px solid rgba(0,0,0,0.03);
+    }
+
+    .premium-card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 25px 50px rgba(0,162,213,0.15);
+    }
+
+    .card-img-wrapper {
+        position: relative;
+        height: 280px;
+        overflow: hidden;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.7s ease;
+    }
+
+    .premium-card:hover .card-img {
+        transform: scale(1.08);
+    }
+
+    .card-badge {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        padding: 6px 14px;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        font-weight: 800;
+        color: #00A2D5;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        z-index: 2;
+    }
+
+    .card-content {
+        padding: 35px;
+        position: relative;
+        text-align: left;
+    }
+
+    .card-content::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 35px; right: 35px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(0, 162, 213, 0.2), transparent);
+    }
+
+    .info-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 20px;
+        padding: 12px;
+        border-radius: 12px;
+        background: #f8fafc;
+        transition: background 0.3s ease;
+        text-align: left;
+    }
+    
+    .premium-card:hover .info-row {
+        background: #f1f5f9;
+    }
+
+    .info-icon {
+        background: linear-gradient(135deg, #00A2D5, #00F2A5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.3rem;
+        margin-top: 2px;
+    }
+
+    .solid-panel {
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 40px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .rule-item {
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        padding: 15px 0;
+        border-bottom: 1px dashed rgba(0,0,0,0.1);
+    }
+
+    .rule-item:last-child {
+        border-bottom: none;
+    }
+
+    .rule-icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: rgba(255, 140, 0, 0.1);
+        color: #ff8c00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 0.9rem;
+    }
+
+</style>
+
+<section class="full-width hospedagem-hero">
+    <div class="container scroll-animate" style="max-width: 900px; position: relative; z-index: 1;">
+        <div style="display: inline-block; padding: 8px 20px; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 50px; font-size: 0.85rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 20px; text-transform: uppercase;">
+            Planeje sua Viagem
+        </div>
+        <h1 class="responsive-heading-xl" style="font-weight: 900; margin-bottom: 25px; line-height: 1.1; text-transform: uppercase; text-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+            Hospedagem e <span style="color: #00F2A5;">Caravanas</span>
+        </h1>
+        <p style="font-size: 1.25rem; line-height: 1.7; opacity: 0.95; font-weight: 300; max-width: 700px; margin: 0 auto;">
+            Prepare-se para a ERBASE 2026 em Maragogi. Aproveite tarifas exclusivas nas nossas pousadas parceiras ou cadastre a sua caravana acadêmica.
+        </p>
+    </div>
+</section>
+
+<section class="full-width section-padding" style="background-color: #f8fafc; position: relative;">
+    
+    <!-- Elemento decorativo -->
+    <div style="position: absolute; top: 100px; left: -50px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(0, 162, 213, 0.05) 0%, transparent 70%);"></div>
+
+    <div class="container">
+        <div class="section-title-container scroll-animate text-center" style="display: flex; flex-direction: column; align-items: center;">
+            <h2 class="section-title" style="color: #001a4d; text-align: center;">Hospedagens Parceiras</h2>
+            <div class="section-title-line"></div>
+            <p class="mt-20" style="color: #64748b; font-size: 1.15rem; max-width: 800px; text-align: center; line-height: 1.7;">
+                Buscando conforto e praticidade durante o evento? Fechamos parcerias exclusivas com as melhores opções da região. 
+                Ao entrar em contato, informe que participará da <strong>ERBASE 2026</strong> para ter acesso a condições especiais.
+            </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-top: 60px;" class="scroll-animate">
+            
+            <!-- Flor da Barra -->
+            <div class="premium-card">
+                <div class="card-img-wrapper">
+                    <div class="card-badge"><i class="fa-solid fa-star" style="margin-right: 5px;"></i> Tarifa Especial</div>
+                    <img src="assets/img/hospedagem/pousada-flordabarra.png" alt="Pousada Flor da Barra" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 style="font-size: 1.8rem; color: #001a4d; margin-bottom: 25px; font-weight: 900;">Pousada Flor da Barra</h3>
+                    
+                    <div class="info-row">
+                        <i class="fa-solid fa-map-location-dot info-icon"></i>
+                        <span style="color: #334155; line-height: 1.6; font-size: 1rem;">
+                            <strong>Av. Jubarte, S/N</strong> - Barra Grande<br>
+                            <span style="color: #64748b;">Maragogi - AL, 57955-000</span>
+                        </span>
+                    </div>
+
+                    <div class="info-row">
+                        <i class="fa-solid fa-phone-volume info-icon"></i>
+                        <span style="color: #334155; line-height: 1.6; font-size: 1rem;">
+                            <strong>(81) 98934-4366</strong><br>
+                            <span style="color: #64748b;">Atendimento via WhatsApp</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yapara-Tyba -->
+            <div class="premium-card">
+                <div class="card-img-wrapper">
+                    <div class="card-badge"><i class="fa-solid fa-star" style="margin-right: 5px;"></i> Tarifa Especial</div>
+                    <img src="assets/img/hospedagem/pousada-yapara-tyba.png" alt="Pousada Yapara-Tyba" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 style="font-size: 1.8rem; color: #001a4d; margin-bottom: 25px; font-weight: 900;">Pousada Yapara-Tyba</h3>
+                    
+                    <div class="info-row">
+                        <i class="fa-solid fa-map-location-dot info-icon"></i>
+                        <span style="color: #334155; line-height: 1.6; font-size: 1rem;">
+                            <strong>Av. Renan Calheiros, s/n</strong> - Povoado de Bitingui<br>
+                            <span style="color: #64748b;">Japaratinga - AL, 57950-000</span>
+                        </span>
+                    </div>
+
+                    <div class="info-row">
+                        <i class="fa-solid fa-phone-volume info-icon"></i>
+                        <span style="color: #334155; line-height: 1.6; font-size: 1rem;">
+                            <strong>(82) 98212-1973</strong><br>
+                            <span style="color: #64748b;">Atendimento via WhatsApp</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="full-width section-padding" style="background: #001a4d; position: relative;">
+
+    <div class="container" style="position: relative; z-index: 1;">
+        <div class="about-flex-container scroll-animate" style="align-items: center; gap: 60px;">
+            
+            <div style="flex: 1;">
+                <div style="display: inline-flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                    <div style="width: 40px; height: 2px; background: #00F2A5;"></div>
+                    <span style="color: #00F2A5; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Para Estudantes</span>
+                </div>
+                <h2 class="responsive-heading-lg" style="color: white; font-weight: 900; margin-bottom: 30px; line-height: 1.2;">
+                    Alojamento para <span style="background: linear-gradient(135deg, #00A2D5, #00F2A5); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Caravanas</span>
+                </h2>
+                <p style="color: rgba(255,255,255,0.8); font-size: 1.15rem; line-height: 1.8; margin-bottom: 40px; text-align: justify;">
+                    Para incentivar a participação coletiva, a organização da ERBASE 2026 fornecerá estrutura de alojamento em dois polos estratégicos da região, especialmente pensados para caravanas acadêmicas.
+                </p>
+                
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 250px; display: flex; gap: 15px; align-items: center; padding: 25px; background: #00287a; border-radius: 16px;">
+                        <div style="width: 60px; height: 60px; border-radius: 12px; background: rgba(0, 162, 213, 0.2); display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-school" style="color: #00A2D5; font-size: 1.8rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: white; font-weight: 800; font-size: 1.2rem; margin-bottom: 5px;">Polo 1</h4>
+                            <p style="color: #00F2A5; margin: 0; font-size: 1rem; font-weight: 600;">IFAL - Campus Maragogi</p>
+                        </div>
+                    </div>
+                    
+                    <div style="flex: 1; min-width: 250px; display: flex; gap: 15px; align-items: center; padding: 25px; background: #00287a; border-radius: 16px;">
+                        <div style="width: 60px; height: 60px; border-radius: 12px; background: rgba(0, 242, 165, 0.2); display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-school" style="color: #00F2A5; font-size: 1.8rem;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: white; font-weight: 800; font-size: 1.2rem; margin-bottom: 5px;">Polo 2</h4>
+                            <p style="color: #00F2A5; margin: 0; font-size: 1rem; font-weight: 600;">IFPE - Campus Barreiros</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="flex: 1;">
+                <div class="solid-panel">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                        <h3 style="color: #001a4d; font-size: 1.8rem; font-weight: 900; margin: 0;">Regras</h3>
+                        <span style="background: #ffecd9; color: #ff8c00; padding: 8px 16px; border-radius: 50px; font-weight: 800; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(255, 140, 0, 0.15);">
+                            <i class="fa-solid fa-triangle-exclamation"></i> VAGAS LIMITADAS
+                        </span>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column;">
+                        <div class="rule-item">
+                            <div class="rule-icon"><i class="fa-solid fa-user-check"></i></div>
+                            <span style="color: #334155; line-height: 1.6; font-size: 1.05rem;">Vagas destinadas <strong>exclusivamente</strong> aos inscritos na ERBASE 2026.</span>
+                        </div>
+                        <div class="rule-item">
+                            <div class="rule-icon"><i class="fa-solid fa-file-signature"></i></div>
+                            <span style="color: #334155; line-height: 1.6; font-size: 1.05rem;">Os interessados devem se inscrever preenchendo o formulário oficial e apresentando o <strong>comprovante de inscrição</strong>.</span>
+                        </div>
+                        <div class="rule-item">
+                            <div class="rule-icon" style="background: rgba(225, 29, 72, 0.1); color: #e11d48;"><i class="fa-solid fa-circle-exclamation"></i></div>
+                            <span style="color: #334155; line-height: 1.6; font-size: 1.05rem;"><strong>Atenção:</strong> A inscrição no formulário NÃO garante a vaga. Todos os pedidos passarão por uma criteriosa avaliação da organização.</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px;">
+                        <a href="#" class="action-btn" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #00A2D5, #001a4d); padding: 20px; font-size: 1.1rem; border-radius: 12px; font-weight: 800; box-shadow: 0 10px 25px rgba(0, 162, 213, 0.3);">
+                            PREENCHER FORMULÁRIO DE CARAVANA <i class="fa-solid fa-arrow-right" style="margin-left: 12px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -14,13 +14,13 @@
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 95%;
-    max-width: 1350px;
+    width: max-content;
+    max-width: 95%;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 18px 50px;
+    padding: 12px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +43,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 60px;
 }
 
 .nav-logo {
@@ -52,7 +53,7 @@
 }
 
 .nav-logo img {
-    height: 55px; /* Logo maior */
+    height: 42px; /* Logo médio */
     width: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
@@ -80,9 +81,9 @@
 .nav-link {
     color: #444;
     text-decoration: none;
-    font-size: 1.15rem; /* Fonte um pouco maior */
+    font-size: 1.05rem; /* Fonte um pouco menor */
     font-weight: 600;
-    padding: 12px 28px; /* Área de clique maior */
+    padding: 10px 16px; /* Área de clique menor */
     border-radius: 40px;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     position: relative;
@@ -190,6 +191,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        gap: 0; /* Corrige vazamento do gap de desktop no mobile */
     }
 
     .nav-logo img {
@@ -226,7 +228,7 @@
     }
 
     .nav-menu.active {
-        max-height: 400px; /* Altura máxima suficiente para os links */
+        max-height: 600px; /* Altura máxima aumentada para caber 7 ou 8 itens */
     }
 
     .nav-item {

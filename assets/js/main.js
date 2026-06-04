@@ -1462,3 +1462,41 @@ function initEpicDeveloperAnimations() {
     setTimeout(() => ScrollTrigger.refresh(), 500);
     setTimeout(() => ScrollTrigger.refresh(), 2000);
 }
+
+function initCountdownTimer() {
+    const targetDate = new Date("2026-09-23T08:00:00-03:00").getTime();
+
+    setInterval(() => {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance < 0) {
+            const monthsEl = document.getElementById("cd-months");
+            if(monthsEl) {
+                document.getElementById("cd-months").innerText = "00";
+                document.getElementById("cd-days").innerText = "00";
+                document.getElementById("cd-hours").innerText = "00";
+                document.getElementById("cd-minutes").innerText = "00";
+                document.getElementById("cd-seconds").innerText = "00";
+            }
+            return;
+        }
+
+        const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30.44));
+        const days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        const monthsEl = document.getElementById("cd-months");
+        if (monthsEl) {
+            monthsEl.innerText = months.toString().padStart(2, '0');
+            document.getElementById("cd-days").innerText = days.toString().padStart(2, '0');
+            document.getElementById("cd-hours").innerText = hours.toString().padStart(2, '0');
+            document.getElementById("cd-minutes").innerText = minutes.toString().padStart(2, '0');
+            document.getElementById("cd-seconds").innerText = seconds.toString().padStart(2, '0');
+        }
+    }, 1000);
+}
+
+initCountdownTimer();
