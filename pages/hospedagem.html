@@ -130,7 +130,17 @@
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+
+    .rule-item span {
+        text-align: left; /* Prevent inheriting center alignment */
+    }
+
+    @media (max-width: 768px) {
+        .solid-panel {
+            padding: 25px 20px;
+        }
     }
 
 </style>
@@ -242,7 +252,7 @@
                 </p>
                 
                 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 250px; display: flex; gap: 15px; align-items: center; padding: 25px; background: #00287a; border-radius: 16px;">
+                    <div class="polo-card" style="flex: 1; min-width: 250px; display: flex; gap: 15px; align-items: center; padding: 25px; background: #00287a; border-radius: 16px;">
                         <div style="width: 60px; height: 60px; border-radius: 12px; background: rgba(0, 162, 213, 0.2); display: flex; align-items: center; justify-content: center;">
                             <i class="fa-solid fa-school" style="color: #00A2D5; font-size: 1.8rem;"></i>
                         </div>
@@ -252,7 +262,7 @@
                         </div>
                     </div>
                     
-                    <div style="flex: 1; min-width: 250px; display: flex; gap: 15px; align-items: center; padding: 25px; background: #00287a; border-radius: 16px;">
+                    <div class="polo-card" style="flex: 1; min-width: 250px; display: flex; gap: 15px; align-items: center; padding: 25px; background: #00287a; border-radius: 16px;">
                         <div style="width: 60px; height: 60px; border-radius: 12px; background: rgba(0, 242, 165, 0.2); display: flex; align-items: center; justify-content: center;">
                             <i class="fa-solid fa-school" style="color: #00F2A5; font-size: 1.8rem;"></i>
                         </div>
@@ -266,9 +276,9 @@
 
             <div style="flex: 1;">
                 <div class="solid-panel">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
-                        <h3 style="color: #001a4d; font-size: 1.8rem; font-weight: 900; margin: 0;">Regras</h3>
-                        <span style="background: #ffecd9; color: #ff8c00; padding: 8px 16px; border-radius: 50px; font-weight: 800; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(255, 140, 0, 0.15);">
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 15px; margin-bottom: 30px;">
+                        <h3 style="color: #001a4d; font-size: 1.8rem; font-weight: 900; margin: 0; word-break: break-word;">Regras</h3>
+                        <span style="background: #ffecd9; color: #ff8c00; padding: 8px 16px; border-radius: 50px; font-weight: 800; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(255, 140, 0, 0.15); text-align: center; white-space: normal;">
                             <i class="fa-solid fa-triangle-exclamation"></i> VAGAS LIMITADAS
                         </span>
                     </div>

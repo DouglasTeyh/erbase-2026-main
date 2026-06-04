@@ -1281,7 +1281,7 @@ section#palestrantes::after {
         margin: 0;
         align-items: center;
         height: 100vh;
-        padding-top: 220px; /* Aumentado para dar espaço total ao título e hint */
+        padding-top: 220px;
         gap: 0;
         overflow: visible; /* O overflow é controlado pelo parent #chamadas */
     }
@@ -1381,10 +1381,7 @@ section#palestrantes::after {
         height: 500px;
     }
 
-    .hero-section {
-        padding-top: 100px;
-        min-height: 50vh;
-    }
+    /* Removido o sobrescrito .hero-section de 50vh que estava quebrando o layout */
 
     .about-img {
         height: 250px;
@@ -2873,4 +2870,48 @@ section#palestrantes::after {
     .responsive-heading-lg {
         font-size: 1.8rem !important;
     }
+}
+
+/* RESPONSIVIDADE LIMPA VIA CSS - SUBTITUTO DAS GAMBIARRAS INLINE */
+@media (max-width: 768px) {
+    /* Home: Inscrições */
+    .registration-col {
+        min-width: 100% !important;
+        padding: 30px !important;
+    }
+
+    /* Admin: Painel */
+    .admin-panel, #admin-login-overlay > div {
+        padding: 20px !important;
+    }
+
+    /* RoboBase: Tabelas */
+    table {
+        min-width: 100% !important;
+    }
+
+    /* XBase: Trilhas e Info */
+    .trilha-item {
+        padding: 10px 15px !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .about-text {
+        padding: 15px !important;
+    }
+
+    /* Hospedagem: Polo Cards */
+    .polo-card {
+        min-width: 100% !important;
+        padding: 15px !important;
+    }
+
+    /* Mostra Científica */
+    .mostra-panel {
+        padding: 20px !important;
+    }
+    .mostra-box {
+        padding: 20px !important;
+    }
+
 }
