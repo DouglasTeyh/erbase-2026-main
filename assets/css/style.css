@@ -2874,23 +2874,79 @@ section#palestrantes::after {
 
 /* RESPONSIVIDADE LIMPA VIA CSS - SUBTITUTO DAS GAMBIARRAS INLINE */
 @media (max-width: 768px) {
-    /* Home: Inscrições */
+    /* =============================================
+       GLOBAL - Garante que nada vaze para os lados
+       ============================================= */
+    body, html {
+        overflow-x: hidden;
+    }
+    .full-width, .container, section {
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    /* Botões - Sem texto cortado */
+    .action-btn {
+        white-space: normal !important;
+        text-align: center !important;
+        word-break: break-word !important;
+        font-size: 0.95rem !important;
+    }
+
+    /* =============================================
+       HOME: Inscrições
+       ============================================= */
+    .registration-highlight {
+        flex-direction: column !important;
+    }
     .registration-col {
         min-width: 100% !important;
-        padding: 30px !important;
+        padding: 30px 20px !important;
+        box-sizing: border-box !important;
     }
 
-    /* Admin: Painel */
+    /* =============================================
+       HOME / GLOBAL: Flex containers que devem empilhar
+       ============================================= */
+    .about-flex-container {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    .about-text, .about-img-container {
+        min-width: 100% !important;
+        flex: 1 1 100% !important;
+        width: 100% !important;
+    }
+
+    /* =============================================
+       ADMIN: Painel
+       ============================================= */
     .admin-panel, #admin-login-overlay > div {
         padding: 20px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 
-    /* RoboBase: Tabelas */
+    /* =============================================
+       ROBOBASE: Tabelas com scroll horizontal
+       ============================================= */
+    .table-responsive, table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
     table {
-        min-width: 100% !important;
+        min-width: 500px; /* permite scroll horizontal mas não estoura */
     }
 
-    /* XBase: Trilhas e Info */
+    /* =============================================
+       XBASE: Trilhas e Info
+       ============================================= */
     .trilha-item {
         padding: 10px 15px !important;
         width: 100%;
@@ -2900,13 +2956,19 @@ section#palestrantes::after {
         padding: 15px !important;
     }
 
-    /* Hospedagem: Polo Cards */
+    /* =============================================
+       HOSPEDAGEM: Polo Cards + Seção Caravanas
+       ============================================= */
     .polo-card {
         min-width: 100% !important;
+        flex: 1 1 100% !important;
         padding: 15px !important;
+        box-sizing: border-box !important;
     }
 
-    /* Mostra Científica */
+    /* =============================================
+       MOSTRA CIENTÍFICA
+       ============================================= */
     .mostra-panel {
         padding: 20px !important;
     }

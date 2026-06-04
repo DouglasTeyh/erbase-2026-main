@@ -17,35 +17,25 @@
     }
 
     .premium-card {
-        background: white;
-        border-radius: 24px;
+        background: transparent;
+        border-radius: 0;
         overflow: hidden;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.06);
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        position: relative;
-        border: 1px solid rgba(0,0,0,0.03);
-    }
-
-    .premium-card:hover {
-        transform: translateY(-12px);
-        box-shadow: 0 25px 50px rgba(0,162,213,0.15);
+        box-shadow: none;
+        border: none;
     }
 
     .card-img-wrapper {
         position: relative;
         height: 280px;
+        border-radius: 16px;
         overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 
     .card-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 0.7s ease;
-    }
-
-    .premium-card:hover .card-img {
-        transform: scale(1.08);
     }
 
     .card-badge {
@@ -64,17 +54,9 @@
     }
 
     .card-content {
-        padding: 35px;
+        padding: 25px 10px;
         position: relative;
         text-align: left;
-    }
-
-    .card-content::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 35px; right: 35px;
-        height: 1px;
-        background: linear-gradient(90deg, transparent, rgba(0, 162, 213, 0.2), transparent);
     }
 
     .info-row {
@@ -82,17 +64,11 @@
         align-items: flex-start;
         gap: 16px;
         margin-bottom: 20px;
-        padding: 12px;
-        border-radius: 12px;
-        background: #f8fafc;
-        transition: background 0.3s ease;
+        padding: 12px 0;
+        background: transparent;
         text-align: left;
     }
     
-    .premium-card:hover .info-row {
-        background: #f1f5f9;
-    }
-
     .info-icon {
         background: linear-gradient(135deg, #00A2D5, #00F2A5);
         -webkit-background-clip: text;
@@ -139,7 +115,25 @@
 
     @media (max-width: 768px) {
         .solid-panel {
-            padding: 25px 20px;
+            padding: 25px 20px; /* Padding reduzido mas fundo branco mantido */
+            background: #ffffff;  /* MANTÉM O FUNDO BRANCO PARA VISIBILIDADE */
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .action-btn {
+            white-space: normal !important;
+            text-align: center;
+            word-break: break-word;
+            padding: 16px 20px !important;
+            font-size: 0.95rem !important;
+        }
+        .about-flex-container {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .polo-card {
+            min-width: 100% !important;
+            flex: 1 1 100% !important;
         }
     }
 
@@ -174,7 +168,7 @@
             </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-top: 60px;" class="scroll-animate">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 60px; margin-top: 60px;" class="scroll-animate">
             
             <!-- Flor da Barra -->
             <div class="premium-card">
@@ -299,8 +293,8 @@
                     </div>
 
                     <div style="margin-top: 40px;">
-                        <a href="#" class="action-btn" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #00A2D5, #001a4d); padding: 20px; font-size: 1.1rem; border-radius: 12px; font-weight: 800; box-shadow: 0 10px 25px rgba(0, 162, 213, 0.3);">
-                            PREENCHER FORMULÁRIO DE CARAVANA <i class="fa-solid fa-arrow-right" style="margin-left: 12px;"></i>
+                        <a href="#" class="action-btn" style="display: flex; width: 100%; box-sizing: border-box; justify-content: center; align-items: center; background: linear-gradient(135deg, #00A2D5, #001a4d); padding: 20px; font-size: 1rem; border-radius: 12px; font-weight: 800; box-shadow: 0 10px 25px rgba(0, 162, 213, 0.3); white-space: normal; text-align: center; word-break: break-word; gap: 10px;">
+                            PREENCHER FORMULÁRIO DE CARAVANA <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
