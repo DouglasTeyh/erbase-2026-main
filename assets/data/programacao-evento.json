@@ -1,6 +1,15 @@
 [
   {
     "dia_evento": 23,
+    "titulo_curto": "AMOSTRA CIENTÍFICA",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "08:00",
+    "hora_fim": "20:00",
+    "descricao": "Mostra Científica (Dia Todo)",
+    "cor": "event-orange"
+  },
+  {
+    "dia_evento": 23,
     "titulo_curto": "Credenciamento + Recepção + Apresentação",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "12:00",

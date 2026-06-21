@@ -395,55 +395,42 @@ async function loadAndRenderSchedule() {
             if (!eventsByDayCol[key]) eventsByDayCol[key] = [];
             eventsByDayCol[key].push(ev);
         });
-
         Object.values(eventsByDayCol).forEach(colEvents => {
-            let clusters = [];
-            let currentCluster = [];
-            let currentMaxEnd = 0;
-
             colEvents.sort((a, b) => timeToMins(a.hora_inicio) - timeToMins(b.hora_inicio));
 
+            let columns = [];
             colEvents.forEach(ev => {
-                let start = timeToMins(ev.hora_inicio);
-                let end = timeToMins(ev.hora_fim);
-
-                if (currentCluster.length === 0) {
-                    currentCluster.push(ev);
-                    currentMaxEnd = end;
-                } else if (start < currentMaxEnd) {
-                    currentCluster.push(ev);
-                    currentMaxEnd = Math.max(currentMaxEnd, end);
-                } else {
-                    clusters.push(currentCluster);
-                    currentCluster = [ev];
-                    currentMaxEnd = end;
+                let placed = false;
+                for (let i = 0; i < columns.length; i++) {
+                    let lastEvent = columns[i][columns[i].length - 1];
+                    if (timeToMins(lastEvent.hora_fim) <= timeToMins(ev.hora_inicio)) {
+                        columns[i].push(ev);
+                        ev._colIndex = i;
+                        placed = true;
+                        break;
+                    }
+                }
+                if (!placed) {
+                    columns.push([ev]);
+                    ev._colIndex = columns.length - 1;
                 }
             });
-            if (currentCluster.length > 0) {
-                clusters.push(currentCluster);
-            }
 
-            clusters.forEach(cluster => {
-                let columns = [];
-                cluster.forEach(ev => {
-                    let placed = false;
-                    for (let i = 0; i < columns.length; i++) {
-                        let lastEvent = columns[i][columns[i].length - 1];
-                        if (timeToMins(lastEvent.hora_fim) <= timeToMins(ev.hora_inicio)) {
-                            columns[i].push(ev);
-                            ev._colIndex = i;
-                            placed = true;
-                            break;
-                        }
+            colEvents.forEach(ev => {
+                ev._totalCols = columns.length;
+                
+                let maxSpan = 1;
+                for (let c = ev._colIndex + 1; c < columns.length; c++) {
+                    let overlaps = columns[c].some(other => {
+                        return timeToMins(other.hora_inicio) < timeToMins(ev.hora_fim) &&
+                               timeToMins(other.hora_fim) > timeToMins(ev.hora_inicio);
+                    });
+                    if (overlaps) {
+                        break;
                     }
-                    if (!placed) {
-                        columns.push([ev]);
-                        ev._colIndex = columns.length - 1;
-                    }
-                });
-                cluster.forEach(ev => {
-                    ev._totalCols = columns.length;
-                });
+                    maxSpan++;
+                }
+                ev._span = maxSpan;
             });
         });
 
@@ -464,7 +451,7 @@ async function loadAndRenderSchedule() {
             const endRow = `time-${(ev.hora_fim || '').replace(':', '')}`;
 
             const col = colMap[ev.nome_evento] || 2;
-            const colorClass = colorMap[ev.nome_evento] || "event-blue";
+            const colorClass = ev.cor || colorMap[ev.nome_evento] || "event-blue";
 
             const el = document.createElement('div');
             el.className = `schedule-event ${colorClass}`;
@@ -495,7 +482,8 @@ async function loadAndRenderSchedule() {
                 }
 
                 if (ev._totalCols > 1) {
-                    el.style.width = `calc(${100 / ev._totalCols}% - 6px)`;
+                    let colSpan = ev._span || 1;
+                    el.style.width = `calc(${colSpan * (100 / ev._totalCols)}% - 6px)`;
                     el.style.justifySelf = 'start';
                     el.style.left = `calc(${ev._colIndex * (100 / ev._totalCols)}%)`;
                 }
@@ -1480,3 +1468,143 @@ function initCountdownTimer() {
 }
 
 initCountdownTimer();
+
+window.copyCouponAndRedirect = function(coupon, redirectUrl) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(coupon).then(() => {
+            showCouponModal(`Cupom <strong>${coupon}</strong> copiado para a área de transferência! Redirecionando para o site oficial da pousada...`);
+            setTimeout(() => {
+                window.open(redirectUrl, '_blank');
+            }, 1800);
+        }).catch(err => {
+            console.error('Falha ao copiar cupom:', err);
+            window.open(redirectUrl, '_blank');
+        });
+    } else {
+        // Fallback for older browsers
+        const el = document.createElement('textarea');
+        el.value = coupon;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        showCouponModal(`Cupom <strong>${coupon}</strong> copiado para a área de transferência! Redirecionando para o site oficial da pousada...`);
+        setTimeout(() => {
+            window.open(redirectUrl, '_blank');
+        }, 1800);
+    }
+};
+
+function showCouponModal(htmlText) {
+    // Inject animation styles if not present
+    if (!document.getElementById('modal-spin-style')) {
+        const style = document.createElement('style');
+        style.id = 'modal-spin-style';
+        style.textContent = `
+            @keyframes modal-spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    let modal = document.getElementById('coupon-modal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'coupon-modal';
+        modal.style.position = 'fixed';
+        modal.style.inset = '0';
+        modal.style.background = 'rgba(0, 10, 30, 0.4)';
+        modal.style.backdropFilter = 'blur(15px)';
+        modal.style.webkitBackdropFilter = 'blur(15px)';
+        modal.style.display = 'flex';
+        modal.style.alignItems = 'center';
+        modal.style.justifyContent = 'center';
+        modal.style.zIndex = '999999';
+        modal.style.opacity = '0';
+        modal.style.transition = 'opacity 0.4s ease';
+        modal.style.pointerEvents = 'none';
+
+        const card = document.createElement('div');
+        card.id = 'coupon-modal-card';
+        card.style.background = 'linear-gradient(135deg, #001a4d 0%, #002b3d 100%)';
+        card.style.padding = '40px 60px';
+        card.style.borderRadius = '24px';
+        card.style.boxShadow = '0 30px 60px rgba(0,0,0,0.4)';
+        card.style.border = '1px solid rgba(255,255,255,0.08)';
+        card.style.display = 'flex';
+        card.style.flexDirection = 'column';
+        card.style.alignItems = 'center';
+        card.style.gap = '25px';
+        card.style.transform = 'scale(0.9)';
+        card.style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
+        card.style.textAlign = 'center';
+        card.style.maxWidth = '480px';
+        card.style.width = '90%';
+
+        // Spinner
+        const spinner = document.createElement('div');
+        spinner.style.width = '60px';
+        spinner.style.height = '60px';
+        spinner.style.border = '4px solid rgba(0, 242, 165, 0.1)';
+        spinner.style.borderTopColor = '#00F2A5';
+        spinner.style.borderRadius = '50%';
+        spinner.style.animation = 'modal-spin 1s linear infinite';
+
+        // Content Wrapper
+        const content = document.createElement('div');
+        content.style.display = 'flex';
+        content.style.flexDirection = 'column';
+        content.style.gap = '10px';
+
+        const title = document.createElement('h3');
+        title.style.color = '#00F2A5';
+        title.style.fontSize = '1.5rem';
+        title.style.fontWeight = '800';
+        title.style.margin = '0';
+        title.style.display = 'flex';
+        title.style.alignItems = 'center';
+        title.style.justifyContent = 'center';
+        title.style.gap = '10px';
+        title.style.fontFamily = 'Inter, Roboto, sans-serif';
+        title.innerHTML = '<i class="fa-solid fa-circle-check"></i> Cupom Copiado!';
+
+        const text = document.createElement('p');
+        text.id = 'coupon-modal-text';
+        text.style.color = 'rgba(255,255,255,0.9)';
+        text.style.fontSize = '1rem';
+        text.style.lineHeight = '1.6';
+        text.style.margin = '0';
+        text.style.fontFamily = 'Inter, Roboto, sans-serif';
+        text.style.fontWeight = '500';
+
+        content.appendChild(title);
+        content.appendChild(text);
+        card.appendChild(spinner);
+        card.appendChild(content);
+        modal.appendChild(card);
+        document.body.appendChild(modal);
+    }
+
+    const textEl = document.getElementById('coupon-modal-text');
+    textEl.innerHTML = htmlText;
+
+    const cardEl = document.getElementById('coupon-modal-card');
+
+    // Show modal
+    modal.style.pointerEvents = 'auto';
+    setTimeout(() => {
+        modal.style.opacity = '1';
+        cardEl.style.transform = 'scale(1)';
+    }, 50);
+
+    // Hide modal after some time (after redirection has started)
+    setTimeout(() => {
+        modal.style.opacity = '0';
+        cardEl.style.transform = 'scale(0.9)';
+        setTimeout(() => {
+            modal.style.pointerEvents = 'none';
+        }, 400);
+    }, 3000);
+}

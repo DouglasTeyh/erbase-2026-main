@@ -1122,6 +1122,10 @@ section#palestrantes::after {
     background-color: #e83e8c;
 }
 
+.event-orange {
+    background-color: #ff6b00;
+}
+
 .event-break {
     background-color: #f0f0f0;
     color: #888;
@@ -2977,3 +2981,72 @@ section#palestrantes::after {
     }
 
 }
+
+/* Helper styles for unified participation section */
+.hover-scale-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+.hover-scale-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08) !important;
+    border-color: rgba(0, 162, 213, 0.2) !important;
+}
+
+@media (max-width: 991px) {
+    .desktop-only-divider {
+        display: none !important;
+    }
+}
+
+/* Styles for the Unified Premium Solid Panel on Home page */
+.unified-solid-panel {
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    padding: 60px;
+}
+
+.unified-columns-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    position: relative;
+    align-items: stretch;
+}
+
+.unified-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.cancellation-policy-box {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width: 991px) {
+    .unified-solid-panel {
+        padding: 40px 24px !important;
+        border-radius: 20px !important;
+    }
+    .unified-columns-container {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+    .unified-column {
+        padding: 0 !important;
+    }
+    .cancellation-policy-box {
+        padding: 20px 16px !important;
+    }
+}
+

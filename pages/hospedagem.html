@@ -113,6 +113,69 @@
         text-align: left; /* Prevent inheriting center alignment */
     }
 
+    .hospedagens-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        margin-top: 60px;
+    }
+
+    .coupon-btn {
+        width: 100%;
+        justify-content: center;
+        background: linear-gradient(135deg, #00A2D5, #001a4d);
+        font-size: 0.9rem;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-weight: 700;
+        border: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0, 162, 213, 0.15);
+        transition: transform 0.2s, box-shadow 0.2s;
+        margin-top: 15px;
+    }
+    
+    .coupon-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 162, 213, 0.25);
+        color: white !important;
+    }
+
+    @media (max-width: 992px) {
+        .hospedagens-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .premium-card {
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            padding: 24px;
+            box-sizing: border-box;
+        }
+
+        .card-img-wrapper {
+            height: 220px;
+            border-radius: 14px;
+        }
+
+        .card-content {
+            padding: 20px 0 0 0;
+        }
+
+        .coupon-btn {
+            padding: 16px 24px !important;
+            font-size: 1.05rem !important;
+            border-radius: 10px !important;
+        }
+    }
+
     @media (max-width: 768px) {
         .solid-panel {
             padding: 25px 20px; /* Padding reduzido mas fundo branco mantido */
@@ -168,7 +231,7 @@
             </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 60px; margin-top: 60px;" class="scroll-animate">
+        <div class="hospedagens-grid scroll-animate">
             
             <!-- Flor da Barra -->
             <div class="premium-card">
@@ -224,6 +287,96 @@
                 </div>
             </div>
 
+            <!-- Agua de Fuego -->
+            <div class="premium-card">
+                <div class="card-img-wrapper">
+                    <div class="card-badge" style="color: #001a4d; background: #00F2A5;"><i class="fa-solid fa-ticket" style="margin-right: 5px;"></i> Cupom ERBASE2026</div>
+                    <img src="assets/img/hospedagem/pousada-aguadefuego.jpeg" alt="Pousada Agua de Fuego" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 style="font-size: 1.8rem; color: #001a4d; margin-bottom: 25px; font-weight: 900;">Pousada Agua de Fuego</h3>
+                    
+                    <div class="info-row">
+                        <i class="fa-solid fa-map-location-dot info-icon"></i>
+                        <span style="color: #334155; line-height: 1.6; font-size: 1rem;">
+                            <strong>Rua Santa Cruz do Capibaribe</strong><br>
+                            <span style="color: #64748b;">Maragogi - AL</span>
+                        </span>
+                    </div>
+
+                    <div class="info-row">
+                        <i class="fa-solid fa-globe info-icon"></i>
+                        <span style="color: #334155; line-height: 1.6; font-size: 1rem;">
+                            <a href="http://www.aguadefuego.com.br" target="_blank" style="color: #00A2D5; font-weight: 700; text-decoration: underline;">www.aguadefuego.com.br</a><br>
+                            <span style="color: #64748b;">Site Oficial</span>
+                        </span>
+                    </div>
+
+                    <div class="info-row">
+                        <i class="fa-brands fa-instagram info-icon"></i>
+                        <span style="color: #334155; line-height: 1.6; font-size: 1rem;">
+                            <a href="https://www.instagram.com/aguadefuego_/" target="_blank" style="color: #00A2D5; font-weight: 700; text-decoration: underline;">@aguadefuego_</a><br>
+                            <span style="color: #64748b;">Instagram da Empresa</span>
+                        </span>
+                    </div>
+
+                    <div style="background: rgba(0, 242, 165, 0.05); border-left: 3px solid #00F2A5; padding: 12px; border-radius: 4px; margin-top: 10px;">
+                        <span style="color: #64748b; font-size: 0.85rem; line-height: 1.4; display: block;">
+                            <i class="fa-solid fa-tag" style="color: #00A2D5; margin-right: 5px;"></i> <strong>10% de desconto</strong> inserindo o cupom no site oficial.
+                        </span>
+                    </div>
+
+                    <button class="coupon-btn" onclick="copyCouponAndRedirect('ERBASE2026', 'http://www.aguadefuego.com.br')">
+                        <i class="fa-solid fa-copy"></i> Copiar Cupom e Ir ao Site
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pousada da Orla -->
+            <div class="premium-card">
+                <div class="card-img-wrapper">
+                    <div class="card-badge" style="color: #001a4d; background: #00F2A5;"><i class="fa-solid fa-ticket" style="margin-right: 5px;"></i> Cupom ERBASE2026</div>
+                    <img src="assets/img/hospedagem/pousada-daorla.jpeg" alt="Pousada da Orla" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3 style="font-size: 1.8rem; color: #001a4d; margin-bottom: 25px; font-weight: 900;">Pousada da Orla</h3>
+                    
+                    <div class="info-row">
+                        <i class="fa-solid fa-map-location-dot info-icon"></i>
+                        <span style="color: #334155; line-height: 1.6; font-size: 1rem;">
+                            <strong>Av. Sen. Rui Palmeira, 805</strong><br>
+                            <span style="color: #64748b;">Maragogi - AL, 57955-000</span>
+                        </span>
+                    </div>
+
+                    <div class="info-row">
+                        <i class="fa-solid fa-phone-volume info-icon"></i>
+                        <span style="color: #334155; line-height: 1.6; font-size: 1rem;">
+                            <strong>(81) 3202-1655</strong><br>
+                            <span style="color: #64748b;">Central de Reservas</span>
+                        </span>
+                    </div>
+
+                    <div class="info-row">
+                        <i class="fa-solid fa-globe info-icon"></i>
+                        <span style="color: #334155; line-height: 1.6; font-size: 1rem;">
+                            <a href="https://www.pousadadaorlamaragogi.com.br/" target="_blank" style="color: #00A2D5; font-weight: 700; text-decoration: underline;">pousadadaorlamaragogi.com.br</a><br>
+                            <span style="color: #64748b;">Site Oficial</span>
+                        </span>
+                    </div>
+
+                    <div style="background: rgba(0, 242, 165, 0.05); border-left: 3px solid #00F2A5; padding: 12px; border-radius: 4px; margin-top: 10px;">
+                        <span style="color: #64748b; font-size: 0.85rem; line-height: 1.4; display: block;">
+                            <i class="fa-solid fa-calendar-days" style="color: #00A2D5; margin-right: 5px;"></i> Válido para o período de <strong>23 a 25/09/2026</strong>.
+                        </span>
+                    </div>
+
+                    <button class="coupon-btn" onclick="copyCouponAndRedirect('ERBASE2026', 'https://www.pousadadaorlamaragogi.com.br/')">
+                        <i class="fa-solid fa-copy"></i> Copiar Cupom e Ir ao Site
+                    </button>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -242,7 +395,7 @@
                     Alojamento para <span style="background: linear-gradient(135deg, #00A2D5, #00F2A5); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Caravanas</span>
                 </h2>
                 <p style="color: rgba(255,255,255,0.8); font-size: 1.15rem; line-height: 1.8; margin-bottom: 40px; text-align: justify;">
-                    Para incentivar a participação coletiva, a organização da ERBASE 2026 fornecerá estrutura de alojamento em três polos estratégicos da região, especialmente pensados para caravanas acadêmicas.
+                    Para incentivar a participação coletiva, a organização da ERBASE 2026 fornecerá estrutura de alojamento em dois polos estratégicos da região, especialmente pensados para caravanas acadêmicas.
                 </p>
                 
                 <div style="display: flex; flex-direction: column; gap: 15px;">
@@ -255,16 +408,7 @@
                             <p style="color: #00F2A5; margin: 0; font-size: 0.95rem; font-weight: 700; text-align: left;"><i class="fa-solid fa-users" style="margin-right: 5px;"></i> 100 Vagas</p>
                         </div>
                     </div>
-                    
-                    <div class="polo-card" style="display: flex; gap: 20px; align-items: center; padding: 25px; background: #00287a; border-radius: 16px; border-left: 5px solid #00F2A5;">
-                        <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(0, 242, 165, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            <i class="fa-solid fa-school" style="color: #00F2A5; font-size: 1.5rem;"></i>
-                        </div>
-                        <div>
-                            <h4 style="color: white; font-weight: 800; font-size: 1.15rem; margin-bottom: 3px; text-align: left;">IFPE Campus Barreiros</h4>
-                            <p style="color: #00F2A5; margin: 0; font-size: 0.95rem; font-weight: 700; text-align: left;"><i class="fa-solid fa-users" style="margin-right: 5px;"></i> 20 Vagas</p>
-                        </div>
-                    </div>
+
 
                     <div class="polo-card" style="display: flex; gap: 20px; align-items: center; padding: 25px; background: #00287a; border-radius: 16px; border-left: 5px solid #00F2A5;">
                         <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(0, 242, 165, 0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
@@ -303,8 +447,8 @@
                     </div>
 
                     <div style="margin-top: 40px;">
-                        <a href="#" class="action-btn" style="display: flex; width: 100%; box-sizing: border-box; justify-content: center; align-items: center; background: linear-gradient(135deg, #00A2D5, #001a4d); padding: 20px; font-size: 1rem; border-radius: 12px; font-weight: 800; box-shadow: 0 10px 25px rgba(0, 162, 213, 0.3); white-space: normal; text-align: center; word-break: break-word; gap: 10px;">
-                            PREENCHER FORMULÁRIO DE CARAVANA <i class="fa-solid fa-arrow-right"></i>
+                        <a href="https://forms.gle/PpDk1YxuS2JuXWWSA" target="_blank" rel="noopener noreferrer" class="action-btn" style="display: flex; width: 100%; box-sizing: border-box; justify-content: center; align-items: center; background: linear-gradient(135deg, #00A2D5, #001a4d); padding: 20px; font-size: 1rem; border-radius: 12px; font-weight: 800; box-shadow: 0 10px 25px rgba(0, 162, 213, 0.3); white-space: normal; text-align: center; word-break: break-word; gap: 10px;">
+                            SOLICITAR HOSPEDAGEM / ALOJAMENTO <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
