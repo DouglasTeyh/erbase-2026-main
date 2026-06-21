@@ -3050,3 +3050,21 @@ section#palestrantes::after {
     }
 }
 
+/* Align list items and general paragraphs left/justified inside main content, overriding text-align: center inheritance */
+main p, 
+main ul, 
+main ol, 
+main li,
+main .info-box,
+main .submission-box,
+main .about-text {
+    text-align: left;
+}
+
+main .about-text p,
+main .info-box p,
+main .submission-box p {
+    text-align: justify;
+}
+
+

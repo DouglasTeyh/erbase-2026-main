@@ -1,11 +1,11 @@
 [
   {
     "dia_evento": 23,
-    "titulo_curto": "AMOSTRA CIENTÍFICA",
+    "titulo_curto": "MOSTRA CIENTÍFICA",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
     "hora_fim": "20:00",
-    "descricao": "Mostra Científica (Dia Todo)",
+    "descricao": "Mostra Científica de Ensino, Pesquisa e Extensão do IFAL Campus Maragogi (Dia Todo)",
     "cor": "event-orange"
   },
   {
