@@ -3077,7 +3077,7 @@ main .submission-box p {
     bottom: 80px;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    width: 380px;
+    width: 440px;
     background: #ffffff;
     border: 1px solid rgba(0, 162, 213, 0.3);
     backdrop-filter: blur(10px);
@@ -3119,10 +3119,12 @@ main .submission-box p {
 }
 
 .hover-card-avatar {
-    width: 110px;
-    height: 110px;
+    width: 130px;
+    height: 130px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0;
     border: 3px solid #00A2D5;
     box-shadow: 0 4px 10px rgba(0, 162, 213, 0.2);
 }
@@ -3158,6 +3160,16 @@ main .submission-box p {
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 600;
+}
+
+/* Enforce 100% round circles for all committee avatars */
+.committee-item img {
+    width: 60px !important;
+    height: 60px !important;
+    aspect-ratio: 1 / 1 !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
 }
 
 
