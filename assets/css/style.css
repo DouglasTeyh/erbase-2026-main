@@ -1608,7 +1608,6 @@ section#palestrantes::after {
 .committee-item {
     padding: 15px;
     text-align: left;
-    overflow: hidden;
 }
 
 .committee-item strong {
