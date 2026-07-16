@@ -146,19 +146,19 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "MENINAS DIGIBASE - MINICURSO",
+    "titulo_curto": "MENINAS DIGIBASE - OFICINA",
     "nome_evento": "Meninas DigiBase",
     "hora_inicio": "08:00",
     "hora_fim": "09:30",
-    "descricao": "Construindo projetos de diversidade de gênero na Computação"
+    "descricao": "<p><strong>Construindo projetos de diversidade de gênero na Computação: uma abordagem prática</strong></p><p style='margin-top: 10px; font-size: 0.95rem; color: #555;'>A sub-representação de mulheres na Computação ainda é um desafio significativo. Esta oficina apresenta estratégias para a concepção, implementação e avaliação de iniciativas voltadas à promoção da diversidade de gênero.</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Gabriela de Vasconcelos</strong><br><small>IFAL Campus Santana do Ipanema</small></li></ul>"
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "MENINAS DIGIBASE - OFICINA 1",
+    "titulo_curto": "MENINAS DIGIBASE - MINICURSO 1",
     "nome_evento": "Meninas DigiBase",
     "hora_inicio": "09:30",
     "hora_fim": "11:00",
-    "descricao": "Python por Elas: Ciência de Dados e a Realidade das Mulheres na Tecnologia"
+    "descricao": "<p><strong>Python por Elas: Ciência de Dados e a Realidade das Mulheres na Tecnologia</strong></p><p style='margin-top: 10px; font-size: 0.95rem; color: #555;'>Minicurso introdutório à programação em Python aplicada à Ciência de Dados, utilizando a análise e visualização de dados públicos para mapear, compreender e visibilizar a real disparidade de gênero nos cenários da educação, do mercado de trabalho e da tecnologia.</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Valéria Silva Santos</strong><br><small>UFAL Arapiraca - UE Penedo</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -170,11 +170,11 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "MENINAS DIGIBASE - OFICINA 2",
+    "titulo_curto": "MENINAS DIGIBASE - MINICURSO 2",
     "nome_evento": "Meninas DigiBase",
     "hora_inicio": "11:00",
     "hora_fim": "12:30",
-    "descricao": "Como os Ecossistemas de Inovação Estão Sendo Redefinidos por Mulheres."
+    "descricao": "<p><strong>Como os Ecossistemas de Inovação Estão Sendo Redefinidos por Mulheres</strong></p><p style='margin-top: 10px; font-size: 0.95rem; color: #555;'>Minicurso focado em contextualizar a participação histórica das mulheres na tecnologia, a interseccionalidade no ecossistema de inovação, e como meninas e mulheres podem pertencer e criar novos espaços.</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Pâmela Karolina Dias</strong><br><small>ASCES / UFPE</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -282,11 +282,11 @@
   },
   {
     "dia_evento": 25,
-    "titulo_curto": "HACKATHON MENINAS DIGIBASE",
+    "titulo_curto": "BOOTCAMP MENINAS DIGIBASE",
     "nome_evento": "Meninas DigiBase",
     "hora_inicio": "08:00",
     "hora_fim": "16:30",
-    "descricao": ""
+    "descricao": "<p><strong>Bootcamp Meninas DigiBase</strong></p><p style='margin-top: 10px; font-size: 0.95rem; color: #555;'>Bootcamp intensivo focado no desenvolvimento de iniciativas de atração e permanência de meninas e mulheres na área da Computação.</p>"
   },
   {
     "dia_evento": 25,
