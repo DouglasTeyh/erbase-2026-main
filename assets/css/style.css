@@ -3077,12 +3077,12 @@ main .submission-box p {
     bottom: 80px;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    width: 600px;
+    width: 450px;
     background: #ffffff;
     border: 1px solid rgba(0, 162, 213, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 16px;
-    padding: 24px;
+    padding: 20px;
     box-shadow: 0 10px 25px rgba(0, 162, 213, 0.15);
     opacity: 0;
     visibility: hidden;
@@ -3092,7 +3092,7 @@ main .submission-box p {
     flex-direction: row;
     align-items: center;
     text-align: left;
-    gap: 24px;
+    gap: 20px;
 }
 
 .profile-hover-card::after {
@@ -3119,8 +3119,8 @@ main .submission-box p {
 }
 
 .hover-card-avatar {
-    width: 264px;
-    height: 264px;
+    width: 180px;
+    height: 180px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
@@ -3132,14 +3132,14 @@ main .submission-box p {
 .hover-card-info {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     flex-grow: 1;
 }
 
 .hover-card-info h4 {
     margin: 0;
     color: #0f172a;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
     font-weight: 800;
     line-height: 1.3;
 }
@@ -3147,7 +3147,7 @@ main .submission-box p {
 .hover-card-info p {
     margin: 0;
     color: #475569;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     word-break: break-all;
 }
 
@@ -3157,9 +3157,9 @@ main .submission-box p {
     background: rgba(0, 162, 213, 0.1);
     color: #00A2D5;
     border: 1px solid rgba(0, 162, 213, 0.2);
-    padding: 6px 14px;
+    padding: 4px 12px;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
 }
 
