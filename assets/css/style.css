@@ -3077,12 +3077,12 @@ main .submission-box p {
     bottom: 80px;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    width: 440px;
+    width: 600px;
     background: #ffffff;
     border: 1px solid rgba(0, 162, 213, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 16px;
-    padding: 20px;
+    padding: 24px;
     box-shadow: 0 10px 25px rgba(0, 162, 213, 0.15);
     opacity: 0;
     visibility: hidden;
@@ -3092,7 +3092,7 @@ main .submission-box p {
     flex-direction: row;
     align-items: center;
     text-align: left;
-    gap: 20px;
+    gap: 24px;
 }
 
 .profile-hover-card::after {
@@ -3119,34 +3119,35 @@ main .submission-box p {
 }
 
 .hover-card-avatar {
-    width: 130px;
-    height: 130px;
+    width: 264px;
+    height: 264px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
-    border: 3px solid #00A2D5;
-    box-shadow: 0 4px 10px rgba(0, 162, 213, 0.2);
+    border: 4px solid #00A2D5;
+    box-shadow: 0 4px 12px rgba(0, 162, 213, 0.2);
 }
 
 .hover-card-info {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
+    flex-grow: 1;
 }
 
 .hover-card-info h4 {
     margin: 0;
     color: #0f172a;
-    font-size: 1.15rem;
-    font-weight: 700;
+    font-size: 1.35rem;
+    font-weight: 800;
     line-height: 1.3;
 }
 
 .hover-card-info p {
     margin: 0;
     color: #475569;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     word-break: break-all;
 }
 
@@ -3156,10 +3157,10 @@ main .submission-box p {
     background: rgba(0, 162, 213, 0.1);
     color: #00A2D5;
     border: 1px solid rgba(0, 162, 213, 0.2);
-    padding: 4px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-size: 0.8rem;
+    font-weight: 700;
 }
 
 /* Enforce 100% round circles for all committee avatars */
