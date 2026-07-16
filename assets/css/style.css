@@ -3077,22 +3077,22 @@ main .submission-box p {
     bottom: 80px;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    width: 250px;
-    background: rgba(15, 23, 42, 0.95);
-    border: 1px solid rgba(0, 242, 165, 0.3);
+    width: 380px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 162, 213, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 16px;
     padding: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 242, 165, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 162, 213, 0.15);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 100;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
-    gap: 12px;
+    text-align: left;
+    gap: 20px;
 }
 
 .profile-hover-card::after {
@@ -3103,7 +3103,7 @@ main .submission-box p {
     transform: translateX(-50%);
     border-width: 8px;
     border-style: solid;
-    border-color: rgba(15, 23, 42, 0.95) transparent transparent transparent;
+    border-color: #ffffff transparent transparent transparent;
 }
 
 .avatar-container:hover .profile-hover-card {
@@ -3114,41 +3114,47 @@ main .submission-box p {
 
 .avatar-container:hover img:not(.hover-card-avatar) {
     transform: scale(1.1);
-    border-color: #00F2A5 !important;
-    box-shadow: 0 0 15px rgba(0, 242, 165, 0.4);
+    border-color: #00A2D5 !important;
+    box-shadow: 0 0 15px rgba(0, 162, 213, 0.4);
 }
 
 .hover-card-avatar {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #00F2A5;
-    box-shadow: 0 0 15px rgba(0, 242, 165, 0.2);
+    border: 3px solid #00A2D5;
+    box-shadow: 0 4px 10px rgba(0, 162, 213, 0.2);
+}
+
+.hover-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .hover-card-info h4 {
     margin: 0;
-    color: #fff;
-    font-size: 1.05rem;
+    color: #0f172a;
+    font-size: 1.15rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
 .hover-card-info p {
-    margin: 6px 0 0 0;
-    color: #94a3b8;
-    font-size: 0.8rem;
+    margin: 0;
+    color: #475569;
+    font-size: 0.85rem;
     word-break: break-all;
 }
 
 .hover-card-badge {
     display: inline-block;
-    margin-top: 10px;
-    background: rgba(0, 242, 165, 0.1);
-    color: #00F2A5;
-    border: 1px solid rgba(0, 242, 165, 0.2);
-    padding: 4px 10px;
+    align-self: flex-start;
+    background: rgba(0, 162, 213, 0.1);
+    color: #00A2D5;
+    border: 1px solid rgba(0, 162, 213, 0.2);
+    padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 600;
