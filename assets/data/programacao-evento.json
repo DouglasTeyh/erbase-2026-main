@@ -4,8 +4,8 @@
     "titulo_curto": "MOSTRA CIENTÍFICA",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
-    "hora_fim": "20:00",
-    "descricao": "Mostra Científica de Ensino, Pesquisa e Extensão do IFAL Campus Maragogi (Dia Todo)",
+    "hora_fim": "20:30",
+    "descricao": "Mostra Científica de Ensino, Pesquisa e Extensão do IFAL Campus Maragogi (Até 20h30)",
     "cor": "event-orange"
   },
   {
@@ -18,19 +18,19 @@
   },
   {
     "dia_evento": 23,
-    "titulo_curto": "MINICURSO 1",
-    "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "14:00",
-    "hora_fim": "17:30",
-    "descricao": "MINICURSO 1"
-  },
-  {
-    "dia_evento": 23,
     "titulo_curto": "OFICINA 1",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "14:00",
     "hora_fim": "17:30",
     "descricao": "OFICINA 1"
+  },
+  {
+    "dia_evento": 23,
+    "titulo_curto": "MINICURSO 1",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "14:00",
+    "hora_fim": "17:30",
+    "descricao": "MINICURSO 1"
   },
   {
     "dia_evento": 23,
@@ -58,6 +58,14 @@
   },
   {
     "dia_evento": 23,
+    "titulo_curto": "WEIBASE - SESSÃO 1",
+    "nome_evento": "WeiBase",
+    "hora_inicio": "14:00",
+    "hora_fim": "17:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 23,
     "titulo_curto": "INTERVALO",
     "nome_evento": "BREAK",
     "hora_inicio": "17:30",
@@ -82,7 +90,7 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "MINICURSO 2",
+    "titulo_curto": "OFICINA 2",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
     "hora_fim": "10:00",
@@ -90,7 +98,7 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "OFICINA 2",
+    "titulo_curto": "MINICURSO 2",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
     "hora_fim": "10:00",
@@ -98,19 +106,11 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "OFICINA 3",
+    "titulo_curto": "MINICURSO 3",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
     "hora_fim": "10:00",
     "descricao": ""
-  },
-  {
-    "dia_evento": 24,
-    "titulo_curto": "DIGIBASE (OFICINA)",
-    "nome_evento": "Meninas DigiBase",
-    "hora_inicio": "08:00",
-    "hora_fim": "10:30",
-    "descricao": "Construindo projetos de diversidade de gênero na Computação: uma abordagem prática"
   },
   {
     "dia_evento": 24,
@@ -122,11 +122,11 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "OFICINA E TREINOS",
+    "titulo_curto": "MINICURSO E TREINOS",
     "nome_evento": "RoboBase",
     "hora_inicio": "08:00",
     "hora_fim": "12:00",
-    "descricao": "OFICINA, DEMONSTRAÇÕES e TREINOS DA ROBOBASE"
+    "descricao": "MINICURSO, DEMONSTRAÇÕES e TREINOS DA ROBOBASE"
   },
   {
     "dia_evento": 24,
@@ -138,17 +138,49 @@
   },
   {
     "dia_evento": 24,
+    "titulo_curto": "WEIBASE - SESSÃO 2",
+    "nome_evento": "WeiBase",
+    "hora_inicio": "08:00",
+    "hora_fim": "12:00",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "MENINAS DIGIBASE - MINICURSO",
+    "nome_evento": "Meninas DigiBase",
+    "hora_inicio": "08:00",
+    "hora_fim": "09:30",
+    "descricao": "Construindo projetos de diversidade de gênero na Computação"
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "MENINAS DIGIBASE - OFICINA 1",
+    "nome_evento": "Meninas DigiBase",
+    "hora_inicio": "09:30",
+    "hora_fim": "11:00",
+    "descricao": "Python por Elas: Ciência de Dados e a Realidade das Mulheres na Tecnologia"
+  },
+  {
+    "dia_evento": 24,
     "titulo_curto": "PALESTRA 2",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "10:00",
     "hora_fim": "12:00",
-    "descricao": "<p><strong>Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica - A Experiência do Projeto ERTA</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Simone de Lucena Ferreira</strong><br><small>Universidade Federal de Sergipe (UFS)</small></li><li><i class='fa-solid fa-user-tie' style='color:#00F2A5;'></i> <strong>José Paulo Gomes Brazão</strong><br><small>Universidade da Madeira (UMa) - Funchal, Portugal</small></li></ul>"
+    "descricao": "<p><strong>Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica - A Experiência do Projeto ERTA</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Simone de Lucena Ferreira</strong><br><small>Universidade Federal de Sergipe (UFS)</small></li><li><i class='fa-solid fa-user-tie' style='color:#00F2A5;'></i> <strong>José Paulo Gomes Brazão</strong><br><small>Universidade da Madeira (UMa) - Funchal, Portugal</small></li><li style='margin-top: 8px;'><i class='fa-solid fa-user-tie' style='color:#FF6B6B;'></i> <strong>Lúcia Amante</strong><br><small>Universidade Aberta (UAb) - LE@D, Lisboa, Portugal</small></li></ul>"
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "MENINAS DIGIBASE - OFICINA 2",
+    "nome_evento": "Meninas DigiBase",
+    "hora_inicio": "11:00",
+    "hora_fim": "12:30",
+    "descricao": "Como os Ecossistemas de Inovação Estão Sendo Redefinidos por Mulheres."
   },
   {
     "dia_evento": 24,
     "titulo_curto": "INTERVALO DO ALMOÇO",
     "nome_evento": "BREAK",
-    "hora_inicio": "12:00",
+    "hora_inicio": "12:30",
     "hora_fim": "13:30",
     "descricao": "Intervalo para almoço."
   },
@@ -159,30 +191,6 @@
     "hora_inicio": "13:30",
     "hora_fim": "15:00",
     "descricao": "<p><strong>ECA Digital, LGPD e Desinformação: Proteger, Educar e Legislar na Era da Cidadania Digital</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Juliana de Albuquerque Gonçalves Saraiva</strong><br><small>Universidade Federal da Paraíba (UFPB) | OAB/RN</small></li><li><i class='fa-solid fa-user-tie' style='color:#00F2A5;'></i> <strong>Cleidson Jacinto de Freitas</strong><br><small>IFAL - Campus Maragogi</small></li></ul>"
-  },
-  {
-    "dia_evento": 24,
-    "titulo_curto": "OFICINA 4",
-    "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "15:00",
-    "hora_fim": "17:30",
-    "descricao": ""
-  },
-  {
-    "dia_evento": 24,
-    "titulo_curto": "OFICINA 5",
-    "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "15:00",
-    "hora_fim": "17:30",
-    "descricao": ""
-  },
-  {
-    "dia_evento": 24,
-    "titulo_curto": "OFICINA 6",
-    "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "15:00",
-    "hora_fim": "17:30",
-    "descricao": ""
   },
   {
     "dia_evento": 24,
@@ -202,6 +210,38 @@
   },
   {
     "dia_evento": 24,
+    "titulo_curto": "MENINAS DIGIBASE",
+    "nome_evento": "Meninas DigiBase",
+    "hora_inicio": "13:30",
+    "hora_fim": "17:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "MINICURSO 4",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "15:00",
+    "hora_fim": "17:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "MINICURSO 5",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "15:00",
+    "hora_fim": "17:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
+    "titulo_curto": "MINICURSO 6",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "15:00",
+    "hora_fim": "17:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 24,
     "titulo_curto": "PESQBASE - SESSÃO 3",
     "nome_evento": "PesqBase",
     "hora_inicio": "15:30",
@@ -210,7 +250,7 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "WEIBASE - SESSÃO 1",
+    "titulo_curto": "WEIBASE - SESSÃO 3",
     "nome_evento": "WeiBase",
     "hora_inicio": "15:30",
     "hora_fim": "17:30",
@@ -218,50 +258,34 @@
   },
   {
     "dia_evento": 25,
-    "titulo_curto": "MINICURSO 3",
+    "titulo_curto": "OFICINA 3",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
-    "hora_fim": "10:00",
-    "descricao": ""
-  },
-  {
-    "dia_evento": 25,
-    "titulo_curto": "OFICINA 7",
-    "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "08:00",
-    "hora_fim": "10:00",
-    "descricao": ""
-  },
-  {
-    "dia_evento": 25,
-    "titulo_curto": "OFICINA 8",
-    "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "08:00",
-    "hora_fim": "10:00",
-    "descricao": ""
-  },
-  {
-    "dia_evento": 25,
-    "titulo_curto": "PALESTRA 4",
-    "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "10:30",
     "hora_fim": "12:00",
-    "descricao": "<p><strong>Ecossistemas de inovação no Nordeste: do Porto Digital ao interior – desafios e oportunidades de interiorização da economia digital</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Heraldo Ourem</strong><br><small>Porto Digital</small></li></ul>"
-  },
-  {
-    "dia_evento": 25,
-    "titulo_curto": "PESQBASE - SESSÃO 4",
-    "nome_evento": "PesqBase",
-    "hora_inicio": "08:30",
-    "hora_fim": "12:30",
     "descricao": ""
   },
   {
     "dia_evento": 25,
-    "titulo_curto": "WEIBASE - SESSÃO 2",
-    "nome_evento": "WeiBase",
-    "hora_inicio": "08:30",
-    "hora_fim": "12:30",
+    "titulo_curto": "MINICURSO 7",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "08:00",
+    "hora_fim": "12:00",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "MINICURSO 8",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "08:00",
+    "hora_fim": "12:00",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "HACKATHON MENINAS DIGIBASE",
+    "nome_evento": "Meninas DigiBase",
+    "hora_inicio": "08:00",
+    "hora_fim": "16:30",
     "descricao": ""
   },
   {
@@ -274,11 +298,11 @@
   },
   {
     "dia_evento": 25,
-    "titulo_curto": "MENINAS DIGIBASE",
-    "nome_evento": "Meninas DigiBase",
-    "hora_inicio": "08:30",
-    "hora_fim": "12:30",
-    "descricao": ""
+    "titulo_curto": "PALESTRA 4",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "10:30",
+    "hora_fim": "12:00",
+    "descricao": "<p><strong>Ecossistemas de inovação no Nordeste: do Porto Digital ao interior – desafios e oportunidades de interiorização da economia digital</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Heraldo Ourem</strong><br><small>Porto Digital</small></li></ul>"
   },
   {
     "dia_evento": 25,
@@ -287,6 +311,22 @@
     "hora_inicio": "12:30",
     "hora_fim": "13:30",
     "descricao": "Intervalo para almoço."
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "PESQBASE - SESSÃO 4",
+    "nome_evento": "PesqBase",
+    "hora_inicio": "13:30",
+    "hora_fim": "16:30",
+    "descricao": ""
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "WEIBASE - SESSÃO 4",
+    "nome_evento": "WeiBase",
+    "hora_inicio": "13:30",
+    "hora_fim": "16:30",
+    "descricao": ""
   },
   {
     "dia_evento": 25,
@@ -301,15 +341,15 @@
     "titulo_curto": "PESQBASE - SESSÃO 5",
     "nome_evento": "PesqBase",
     "hora_inicio": "13:30",
-    "hora_fim": "15:30",
+    "hora_fim": "16:30",
     "descricao": ""
   },
   {
     "dia_evento": 25,
     "titulo_curto": "Premiação + Encerramento + ERBASE 2027",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "15:30",
-    "hora_fim": "17:30",
+    "hora_inicio": "16:30",
+    "hora_fim": "18:00",
     "descricao": "Solenidade de Premiação das Competições, Encerramento Oficial e Lançamento da ERBASE 2027."
   }
 ]

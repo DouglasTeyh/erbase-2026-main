@@ -107,12 +107,14 @@
 .sponsor-sebrae { max-height: 50px; }
 .sponsor-secti { max-height: 50px; }
 .sponsor-maragogi { max-height: 50px; }
+.sponsor-cepene { max-height: 50px; }
 
 @media (min-width: 768px) {
     .sponsors-grid {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
+        align-items: center;
         gap: 2.5rem;
     }
     
@@ -120,6 +122,7 @@
     .sponsor-sebrae { max-height: 75px; }
     .sponsor-secti { max-height: 75px; }
     .sponsor-maragogi { max-height: 75px; }
+    .sponsor-cepene { max-height: 75px; }
 }
 
 .apoio-institutions {
@@ -133,7 +136,7 @@
 
 @media (min-width: 768px) {
     .apoio-institutions {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         justify-items: start; /* Reset for desktop */
     }
 }
