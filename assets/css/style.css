@@ -3164,7 +3164,8 @@ main .submission-box p {
 }
 
 /* Enforce 100% round circles for all committee avatars */
-.committee-item img {
+.committee-item > img,
+.avatar-container > img:not(.hover-card-avatar) {
     width: 60px !important;
     height: 60px !important;
     aspect-ratio: 1 / 1 !important;
