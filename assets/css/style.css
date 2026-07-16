@@ -3174,4 +3174,23 @@ main .submission-box p {
     flex-shrink: 0 !important;
 }
 
+/* Responsive updates for hover card on mobile */
+@media (max-width: 600px) {
+    .profile-hover-card {
+        width: calc(100vw - 40px);
+        max-width: 450px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 16px;
+    }
+    .hover-card-avatar {
+        width: 120px;
+        height: 120px;
+    }
+    .hover-card-badge {
+        align-self: center;
+    }
+}
+
 
