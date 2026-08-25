@@ -1,11 +1,11 @@
 [
   {
     "dia_evento": 23,
-    "titulo_curto": "MOSTRA CIENTÍFICA",
+    "titulo_curto": "EVENTO INTEGRADO",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
     "hora_fim": "20:30",
-    "descricao": "Mostra Científica de Ensino, Pesquisa e Extensão do IFAL Campus Maragogi (Até 20h30)",
+    "descricao": "Evento Integrado de Ensino, Pesquisa e Extensão do IFAL Campus Maragogi (Até 20h30)",
     "cor": "event-orange"
   },
   {
@@ -22,7 +22,7 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "14:00",
     "hora_fim": "17:30",
-    "descricao": "OFICINA 1"
+    "descricao": "<p><strong>Espaço 4.0 e Manna Team apresentam: Educação 5.0 e Cultura Maker</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Vagas:</strong> 15</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Renata Imaculada Soares Pereira / Cassiano Henrique de Albuquerque</strong><br><small style='color: #666;'>Instituto Federal de Alagoas (IFAL)</small></li></ul>"
   },
   {
     "dia_evento": 23,
@@ -30,7 +30,15 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "14:00",
     "hora_fim": "17:30",
-    "descricao": "MINICURSO 1"
+    "descricao": "<p><strong>Python por Elas: Ciência de Dados e a Realidade das Mulheres na Tecnologia</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Vagas:</strong> 20</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Valéria Silva Santos</strong><br><small style='color: #666;'>Graduanda | Universidade Federal de Alagoas (UFAL), Campus Arapiraca – Unidade Educacional Penedo</small></li></ul>"
+  },
+  {
+    "dia_evento": 23,
+    "titulo_curto": "MINICURSO 2",
+    "nome_evento": "EVENTO PRINCIPAL",
+    "hora_inicio": "14:00",
+    "hora_fim": "17:30",
+    "descricao": "<p><strong>Como os ecossistemas de inovação estão sendo redefinidos por mulheres</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Vagas:</strong> 30</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Pâmela Karolina Dias</strong><br><small style='color: #666;'>Docente | Centro Universitário Tabosa de Almeida (Asces-Unita)</small></li></ul>"
   },
   {
     "dia_evento": 23,
@@ -62,7 +70,7 @@
     "nome_evento": "WeiBase",
     "hora_inicio": "14:00",
     "hora_fim": "17:30",
-    "descricao": ""
+    "descricao": "WEIBASE - SESSÃO 1"
   },
   {
     "dia_evento": 23,
@@ -82,11 +90,11 @@
   },
   {
     "dia_evento": 23,
-    "titulo_curto": "Palestra com Pró-Reitores",
+    "titulo_curto": "Palestra dos Reitores",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "19:30",
     "hora_fim": "20:30",
-    "descricao": "<p style='margin-bottom: 15px;'>Mesa de Honra e discussões aprofundadas com presenças confirmadas:</p><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #00A2D5;'><i class='fa-solid fa-user-tie' style='color:#00A2D5; margin-right:5px;'></i> <strong>Meirejane Remigio</strong><br><small style='color:#666; margin-left: 22px;'>SECTI/AL</small></li><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #00F2A5;'><i class='fa-solid fa-user-tie' style='color:#00F2A5; margin-right:5px;'></i> <strong>Pro-reitora Eunice Palmeira da Silva</strong><br><small style='color:#666; margin-left: 22px;'>IFAL - Reitoria/PRPPI</small></li><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #FF6B6B;'><i class='fa-solid fa-user-tie' style='color:#FF6B6B; margin-right:5px;'></i> <strong>Pro-reitor Francisco de Assis de Lima Gama</strong><br><small style='color:#666; margin-left: 22px;'>IF Sertão-PE - Reitoria/PROPIP</small></li></ul>"
+    "descricao": "<p style='margin-bottom: 15px;'>Mesa de Honra dos Reitores e Pró-Reitores - As Transformações Digitais e o Desafio da Interiorização da CT&I:</p><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #00A2D5;'><i class='fa-solid fa-user-tie' style='color:#00A2D5; margin-right:5px;'></i> <strong>Meirejane Remigio</strong><br><small style='color:#666; margin-left: 22px;'>Secretária de Estado da Ciência, Tecnologia e Inovação (SECTI/AL)</small></li><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #00F2A5;'><i class='fa-solid fa-user-tie' style='color:#00F2A5; margin-right:5px;'></i> <strong>Profa. Dra. Eunice Palmeira da Silva</strong><br><small style='color:#666; margin-left: 22px;'>Pró-Reitora de Pesquisa, Pós-Graduação e Inovação (IFAL - Reitoria/PRPPI)</small></li><li style='margin-bottom: 12px; background: #f8f9fa; padding: 10px; border-radius: 8px; border-left: 4px solid #FF6B6B;'><i class='fa-solid fa-user-tie' style='color:#FF6B6B; margin-right:5px;'></i> <strong>Prof. Dr. Francisco de Assis de Lima Gama</strong><br><small style='color:#666; margin-left: 22px;'>Pró-Reitor de Pesquisa (IF Sertão-PE - Reitoria/PROPIP)</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -94,15 +102,15 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
     "hora_fim": "10:00",
-    "descricao": ""
+    "descricao": "<p><strong>Interfaces Offline-First: Resiliência no Desenvolvimento Web para a Interiorização Tecnológica</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Vagas:</strong> 15</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Carlos Artur Alencar Cruz</strong><br><small style='color: #666;'>Graduando em Ciência da Computação | Universidade Federal de Sergipe (UFS)</small></li></ul>"
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "MINICURSO 2",
+    "titulo_curto": "OFICINA 3",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
     "hora_fim": "10:00",
-    "descricao": "Construção de aplicações interdisciplinares de realidade aumentada com navegadores Web"
+    "descricao": "<p><strong>Construindo projetos de diversidade de gênero na Computação: uma abordagem prática</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Vagas:</strong> 20</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Gabriela de Vasconcelos</strong><br><small style='color: #666;'>Docente | Instituto Federal de Alagoas (IFAL), Campus Santana do Ipanema</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -110,7 +118,7 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
     "hora_fim": "10:00",
-    "descricao": ""
+    "descricao": "<p><strong>Visão Computacional: Ensinando Computadores a Enxergar o Mundo</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Vagas:</strong> 30</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Yulle Gustavo Siqueira de Lima</strong><br><small style='color: #666;'>Docente | Instituto Federal de Pernambuco (IFPE), Campus Palmares</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -118,7 +126,7 @@
     "nome_evento": "PesqBase",
     "hora_inicio": "08:00",
     "hora_fim": "12:00",
-    "descricao": ""
+    "descricao": "PESQBASE - SESSÃO 2"
   },
   {
     "dia_evento": 24,
@@ -134,7 +142,7 @@
     "nome_evento": "XBase",
     "hora_inicio": "08:00",
     "hora_fim": "12:00",
-    "descricao": ""
+    "descricao": "MOSTRA DA XBASE"
   },
   {
     "dia_evento": 24,
@@ -142,23 +150,15 @@
     "nome_evento": "WeiBase",
     "hora_inicio": "08:00",
     "hora_fim": "12:00",
-    "descricao": ""
+    "descricao": "WEIBASE - SESSÃO 2"
   },
   {
     "dia_evento": 24,
     "titulo_curto": "MENINAS DIGIBASE - OFICINA",
     "nome_evento": "Meninas DigiBase",
     "hora_inicio": "08:00",
-    "hora_fim": "09:30",
-    "descricao": "<p><strong>Construindo projetos de diversidade de gênero na Computação: uma abordagem prática</strong></p><p style='margin-top: 10px; font-size: 0.95rem; color: #555;'>A sub-representação de mulheres na Computação ainda é um desafio significativo. Esta oficina apresenta estratégias para a concepção, implementação e avaliação de iniciativas voltadas à promoção da diversidade de gênero.</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Gabriela de Vasconcelos</strong><br><small>IFAL Campus Santana do Ipanema</small></li></ul>"
-  },
-  {
-    "dia_evento": 24,
-    "titulo_curto": "MENINAS DIGIBASE - MINICURSO 1",
-    "nome_evento": "Meninas DigiBase",
-    "hora_inicio": "09:30",
     "hora_fim": "11:00",
-    "descricao": "<p><strong>Python por Elas: Ciência de Dados e a Realidade das Mulheres na Tecnologia</strong></p><p style='margin-top: 10px; font-size: 0.95rem; color: #555;'>Minicurso introdutório à programação em Python aplicada à Ciência de Dados, utilizando a análise e visualização de dados públicos para mapear, compreender e visibilizar a real disparidade de gênero nos cenários da educação, do mercado de trabalho e da tecnologia.</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Valéria Silva Santos</strong><br><small>UFAL Arapiraca - UE Penedo</small></li></ul>"
+    "descricao": "<p><strong>Construindo projetos de diversidade de gênero na Computação: uma abordagem prática</strong></p><p style='margin-top: 10px; font-size: 0.95rem; color: #555;'>A sub-representação de mulheres na Computação ainda é um desafio significativo. Esta oficina apresenta estratégias para a concepção, implementação e avaliação de iniciativas voltadas à promoção da diversidade de gênero.</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Gabriela de Vasconcelos</strong><br><small>IFAL Campus Santana do Ipanema</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -167,14 +167,6 @@
     "hora_inicio": "10:00",
     "hora_fim": "12:00",
     "descricao": "<p><strong>Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica - A Experiência do Projeto ERTA</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Simone de Lucena Ferreira</strong><br><small>Universidade Federal de Sergipe (UFS)</small></li><li><i class='fa-solid fa-user-tie' style='color:#00F2A5;'></i> <strong>José Paulo Gomes Brazão</strong><br><small>Universidade da Madeira (UMa) - Funchal, Portugal</small></li><li style='margin-top: 8px;'><i class='fa-solid fa-user-tie' style='color:#FF6B6B;'></i> <strong>Lúcia Amante</strong><br><small>Universidade Aberta (UAb) - LE@D, Lisboa, Portugal</small></li></ul>"
-  },
-  {
-    "dia_evento": 24,
-    "titulo_curto": "MENINAS DIGIBASE - MINICURSO 2",
-    "nome_evento": "Meninas DigiBase",
-    "hora_inicio": "11:00",
-    "hora_fim": "12:30",
-    "descricao": "<p><strong>Como os Ecossistemas de Inovação Estão Sendo Redefinidos por Mulheres</strong></p><p style='margin-top: 10px; font-size: 0.95rem; color: #555;'>Minicurso focado em contextualizar a participação histórica das mulheres na tecnologia, a interseccionalidade no ecossistema de inovação, e como meninas e mulheres podem pertencer e criar novos espaços.</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Pâmela Karolina Dias</strong><br><small>ASCES / UFPE</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -206,7 +198,7 @@
     "nome_evento": "XBase",
     "hora_inicio": "13:30",
     "hora_fim": "17:30",
-    "descricao": ""
+    "descricao": "MOSTRA DA XBASE"
   },
   {
     "dia_evento": 24,
@@ -214,7 +206,7 @@
     "nome_evento": "Meninas DigiBase",
     "hora_inicio": "13:30",
     "hora_fim": "17:30",
-    "descricao": ""
+    "descricao": "Sessões e atividades Meninas DigiBase"
   },
   {
     "dia_evento": 24,
@@ -222,7 +214,7 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "15:00",
     "hora_fim": "17:30",
-    "descricao": ""
+    "descricao": "<p><strong>Modelagem e impressão 3D para prototipagem e maquetes</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Vagas:</strong> 15</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Aristófanes Matias Gomes da Silva</strong><br><small style='color: #666;'>Docente | Instituto Federal de Alagoas (IFAL), Campus Maragogi</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -230,7 +222,7 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "15:00",
     "hora_fim": "17:30",
-    "descricao": ""
+    "descricao": "<p><strong>Introdução à Programação com Java: do Zero à Prática</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Vagas:</strong> 20</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Luis Fernandes</strong><br><small style='color: #666;'>Graduando em Sistemas de Informação | Instituto Federal de Sergipe (IFS), Campus Lagarto</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -238,7 +230,7 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "15:00",
     "hora_fim": "17:30",
-    "descricao": ""
+    "descricao": "<p><strong>Explicabilidade em IA: Uma Abordagem Prática com Métricas e Visual Analytics</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Vagas:</strong> 30</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Priscylla Maria da Silva Sousa</strong><br><small style='color: #666;'>Docente | Instituto Federal de Alagoas (IFAL), Campus Rio Largo</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -246,7 +238,7 @@
     "nome_evento": "PesqBase",
     "hora_inicio": "15:30",
     "hora_fim": "17:30",
-    "descricao": ""
+    "descricao": "PESQBASE - SESSÃO 3"
   },
   {
     "dia_evento": 24,
@@ -254,31 +246,31 @@
     "nome_evento": "WeiBase",
     "hora_inicio": "15:30",
     "hora_fim": "17:30",
-    "descricao": ""
+    "descricao": "WEIBASE - SESSÃO 3"
   },
   {
     "dia_evento": 25,
-    "titulo_curto": "OFICINA 3",
+    "titulo_curto": "OFICINA 4",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
-    "hora_fim": "12:00",
-    "descricao": ""
+    "hora_fim": "10:30",
+    "descricao": "<p><strong>Pensamento Computacional e Robótica com LEGO Mindstorms</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Vagas:</strong> 15</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Brena Maia Santos</strong><br><small style='color: #666;'>Docente | Instituto Federal do Sertão Pernambucano (IFSertãoPE), Campus Salgueiro</small></li></ul>"
   },
   {
     "dia_evento": 25,
     "titulo_curto": "MINICURSO 7",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
-    "hora_fim": "12:00",
-    "descricao": ""
+    "hora_fim": "11:00",
+    "descricao": "<p><strong>Construção de aplicações interdisciplinares de realidade aumentada com navegadores Web</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Vagas:</strong> 20</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Sandro César Silveira Jucá</strong><br><small style='color: #666;'>Docente | Instituto Federal do Ceará (IFCE), Campus Fortaleza</small></li></ul>"
   },
   {
     "dia_evento": 25,
     "titulo_curto": "MINICURSO 8",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
-    "hora_fim": "12:00",
-    "descricao": ""
+    "hora_fim": "11:00",
+    "descricao": "<p><strong>Tecnologias digitais e currículo no contexto da inovação pedagógica: emergências contemporâneas</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Vagas:</strong> 30</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Prof. Paulo Brazão, Prof. Alice Mendonça, Prof. Dora Pombo</strong><br><small style='color: #666;'>Universidade da Madeira - Portugal</small></li></ul>"
   },
   {
     "dia_evento": 25,
@@ -292,16 +284,16 @@
     "dia_evento": 25,
     "titulo_curto": "COMPETIÇÃO PROGBASE",
     "nome_evento": "ProgBase",
-    "hora_inicio": "08:30",
-    "hora_fim": "12:30",
-    "descricao": ""
+    "hora_inicio": "08:00",
+    "hora_fim": "13:00",
+    "descricao": "Maratona de Programação ProgBase (08:00 às 13:00)"
   },
   {
     "dia_evento": 25,
     "titulo_curto": "PALESTRA 4",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "10:30",
-    "hora_fim": "12:00",
+    "hora_fim": "12:30",
     "descricao": "<p><strong>Ecossistemas de inovação no Nordeste: do Porto Digital ao interior – desafios e oportunidades de interiorização da economia digital</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Heraldo Ourem</strong><br><small>Porto Digital</small></li></ul>"
   },
   {
@@ -318,7 +310,7 @@
     "nome_evento": "PesqBase",
     "hora_inicio": "13:30",
     "hora_fim": "16:30",
-    "descricao": ""
+    "descricao": "PESQBASE - SESSÃO 4"
   },
   {
     "dia_evento": 25,
@@ -326,13 +318,13 @@
     "nome_evento": "WeiBase",
     "hora_inicio": "13:30",
     "hora_fim": "16:30",
-    "descricao": ""
+    "descricao": "WEIBASE - SESSÃO 4"
   },
   {
     "dia_evento": 25,
     "titulo_curto": "PALESTRA 5",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "13:30",
+    "hora_inicio": "14:00",
     "hora_fim": "15:30",
     "descricao": "<p><strong>Mais Ciência na Escola: Cultura Maker e Divulgação Científica como Estratégias de Inclusão Digital no Interior do Nordeste</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Flávia Bartira Pedro da Silva Almeida</strong><br><small>Instituto Federal de Alagoas (IFAL)</small></li><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00F2A5;'></i> <strong>Pedro Lemos de Almeida Júnior</strong><br><small>Universidade Federal Rural de Pernambuco (UFRPE)</small></li><li><i class='fa-solid fa-user-tie' style='color:#FF6B6B;'></i> <strong>Antonio Brotas</strong><br><small>Fundação Oswaldo Cruz - Fiocruz Bahia</small></li></ul>"
   },
@@ -342,7 +334,15 @@
     "nome_evento": "PesqBase",
     "hora_inicio": "13:30",
     "hora_fim": "16:30",
-    "descricao": ""
+    "descricao": "PESQBASE - SESSÃO 5"
+  },
+  {
+    "dia_evento": 25,
+    "titulo_curto": "WEIBASE - SESSÃO 5",
+    "nome_evento": "WeiBase",
+    "hora_inicio": "13:30",
+    "hora_fim": "16:30",
+    "descricao": "WEIBASE - SESSÃO 5"
   },
   {
     "dia_evento": 25,

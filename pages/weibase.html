@@ -9,9 +9,14 @@
     <p class="responsive-text scroll-animate" style="color: #ccc; max-width: 800px; margin: 0 auto; margin-bottom: 30px;">
         Workshop de Educação em Informática e Informática na Educação
     </p>
-    <a href="https://jems3.sbc.org.br/weibase2026" target="_blank" class="action-btn scroll-animate">
-        <i class="fa-solid fa-pen-to-square"></i> Inscreva-se / Submeter
-    </a>
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 20px;">
+        <button class="action-btn scroll-animate" style="opacity: 0.7; cursor: not-allowed; pointer-events: none; background: #64748b;">
+            <i class="fa-solid fa-lock"></i> --- SUBMISSÕES ENCERRADAS ---
+        </button>
+        <a href="#" data-section="programacao" class="action-btn scroll-animate" style="background: linear-gradient(135deg, #00A2D5, #001a4d);">
+            <i class="fa-solid fa-calendar-days"></i> Ver Programação do Evento
+        </a>
+    </div>
 </section>
 
 <section class="event-section full-width">
@@ -49,7 +54,7 @@
                     </div>
                 </div>
                 <div class="track-footer">
-                    <a href="https://jems3.sbc.org.br/weibase2026" target="_blank" class="track-submit-btn">Submit</a>
+                    <button class="track-submit-btn" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; background: #64748b; color: #fff;">Encerrado ---</button>
                 </div>
             </div>
 
@@ -69,7 +74,7 @@
                     </div>
                 </div>
                 <div class="track-footer">
-                    <a href="https://jems3.sbc.org.br/weibase2026" target="_blank" class="track-submit-btn">Submit</a>
+                    <button class="track-submit-btn" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; background: #64748b; color: #fff;">Encerrado ---</button>
                 </div>
             </div>
 
@@ -89,7 +94,7 @@
                     </div>
                 </div>
                 <div class="track-footer">
-                    <a href="https://jems3.sbc.org.br/weibase2026" target="_blank" class="track-submit-btn">Submit</a>
+                    <button class="track-submit-btn" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; background: #64748b; color: #fff;">Encerrado ---</button>
                 </div>
             </div>
 
@@ -109,7 +114,7 @@
                     </div>
                 </div>
                 <div class="track-footer">
-                    <a href="https://jems3.sbc.org.br/weibase2026" target="_blank" class="track-submit-btn">Submit</a>
+                    <button class="track-submit-btn" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; background: #64748b; color: #fff;">Encerrado ---</button>
                 </div>
             </div>
         </div>
@@ -138,9 +143,9 @@
                     <h3><i class="fa-solid fa-upload"></i> Plataforma</h3>
                     <p style="margin-bottom: 20px;">Submissões eletrônicas realizadas exclusivamente via sistema JEMS3 da SBC:</p>
                 </div>
-                <a href="https://jems3.sbc.org.br/weibase2026" target="_blank" class="action-btn" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #00F2A5, #00c887); color: #000 !important; font-weight: 800; font-size: 0.9rem; padding: 12px 20px; border-radius: 8px; border: none; box-shadow: 0 4px 15px rgba(0, 242, 165, 0.2);">
-                    <i class="fa-solid fa-paper-plane"></i> Submeter via JEMS3
-                </a>
+                <button class="action-btn" style="width: 100%; justify-content: center; background: #64748b; color: #fff !important; font-weight: 800; font-size: 0.9rem; padding: 12px 20px; border-radius: 8px; border: none; opacity: 0.7; cursor: not-allowed; pointer-events: none;">
+                    <i class="fa-solid fa-lock"></i> --- Submissão Encerrada ---
+                </button>
             </div>
         </div>
 
@@ -155,23 +160,27 @@
             <div class="section-title-line"></div>
         </div>
         <div class="timeline-dates scroll-animate">
-            <div class="date-item">
-                <div class="date-label">Abertura das submissões</div>
+            <div class="date-item" style="border-left-color: #00F2A5; background: rgba(0, 242, 165, 0.08);">
+                <div class="date-label" style="color: #00c887; font-weight: 800;">Dias do Evento</div>
+                <div class="date-value" style="color: #001a4d; font-weight: 800;">23, 24 e 25 de setembro de 2026</div>
+            </div>
+            <div class="date-item" style="text-decoration: line-through; opacity: 0.6;">
+                <div class="date-label">Abertura das submissões --- (Inscrições Encerradas)</div>
                 <div class="date-value">15 de abril de 2026</div>
             </div>
-            <div class="date-item">
-                <div class="date-label">Prazo para submissão de trabalhos</div>
+            <div class="date-item" style="text-decoration: line-through; opacity: 0.6;">
+                <div class="date-label">Prazo para submissão de trabalhos --- (Inscrições Encerradas)</div>
                 <div class="date-value">30 de junho de 2026</div>
             </div>
-            <div class="date-item">
+            <div class="date-item" style="text-decoration: line-through; opacity: 0.6;">
                 <div class="date-label">Notificação dos trabalhos aceitos</div>
                 <div class="date-value">28 de julho de 2026</div>
             </div>
-            <div class="date-item">
+            <div class="date-item" style="text-decoration: line-through; opacity: 0.6;">
                 <div class="date-label">Envio da versão final dos trabalhos aceitos</div>
                 <div class="date-value">14 de agosto de 2026</div>
             </div>
-            <div class="date-item">
+            <div class="date-item" style="text-decoration: line-through; opacity: 0.6;">
                 <div class="date-label">Inscrição de pelo menos um autor por trabalho</div>
                 <div class="date-value">14 de agosto de 2026</div>
             </div>
@@ -182,13 +191,16 @@
 <section class="event-section full-width">
     <div class="container">
         <div class="section-title-container scroll-animate">
-            <h3 class="section-title">Programação</h3>
+            <h3 class="section-title">Programação do Evento</h3>
             <div class="section-title-line"></div>
         </div>
-        <div class="empty-schedule-card scroll-animate">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <h3>Cronograma em Definição</h3>
-            <p>A programação contará com apresentações de artigos completos e relatos das trilhas temáticas.</p>
+        <div class="empty-schedule-card scroll-animate" style="background: white; border-radius: 20px; padding: 40px; text-align: center; border: 1px solid rgba(0, 162, 213, 0.2);">
+            <i class="fa-solid fa-calendar-days" style="font-size: 2.5rem; color: #00A2D5; margin-bottom: 15px;"></i>
+            <h3 style="color: #001a4d; margin-bottom: 15px;">Programação Confirmada</h3>
+            <p style="color: #666; margin-bottom: 25px;">Confira todas as sessões, apresentações de artigos e palestras do WeiBase no cronograma geral.</p>
+            <a href="#" data-section="programacao" class="action-btn" style="display: inline-flex; justify-content: center; background: linear-gradient(135deg, #00A2D5, #001a4d); color: white !important;">
+                Ver Programação Completa <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+            </a>
         </div>
 
         <div class="committee-section scroll-animate">

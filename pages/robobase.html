@@ -9,9 +9,14 @@
     <p class="responsive-text scroll-animate" style="max-width: 800px; margin: 0 auto; margin-bottom: 30px;">
         Competição de Robótica da ERBASE
     </p>
-    <a href="https://jems3.sbc.org.br/events/631" target="_blank" class="action-btn scroll-animate">
-        <i class="fa-solid fa-pen-to-square"></i> Inscreva-se / Submeter
-    </a>
+    <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-bottom: 20px;">
+        <button class="action-btn scroll-animate" style="opacity: 0.7; cursor: not-allowed; pointer-events: none; background: #64748b;">
+            <i class="fa-solid fa-lock"></i> --- SUBMISSÕES ENCERRADAS ---
+        </button>
+        <a href="#" data-section="programacao" class="action-btn scroll-animate" style="background: linear-gradient(135deg, #00A2D5, #001a4d);">
+            <i class="fa-solid fa-calendar-days"></i> Ver Programação do Evento
+        </a>
+    </div>
 </section>
 
 <section class="event-section full-width">
@@ -165,7 +170,7 @@
                     <div style="display: flex; gap: 15px; align-items: flex-start;">
                         <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(239, 68, 68, 0.15); display: flex; align-items: center; justify-content: center; color: #ef4444; flex-shrink: 0;"><i class="fa-solid fa-clock"></i></div>
                         <p style="margin: 0; text-align: justify;">
-                            <strong>Prazo do Primeiro Lote:</strong> O primeiro lote promocional com desconto vai até o dia <strong>30/06/2026</strong>. Após este prazo haverá reajuste automático no valor da inscrição. Garanta a vaga da sua equipe o quanto antes!
+                            <strong>Inscrições no ECOS:</strong> As inscrições no portal ECOS estão no <strong>Último Lote</strong>. Garanta a vaga da sua equipe o quanto antes!
                         </p>
                     </div>
                     <div style="display: flex; gap: 15px; align-items: flex-start;">
@@ -188,23 +193,27 @@
         <div class="submission-box scroll-animate">
             <h3 class="text-light">Datas Importantes</h3>
             <div class="timeline-dates">
-                <div class="date-item">
-                    <div class="date-label">Abertura das submissões</div>
+                <div class="date-item" style="border-left-color: #00F2A5; background: rgba(0, 242, 165, 0.08);">
+                    <div class="date-label" style="color: #00c887; font-weight: 800;">Dias do Evento</div>
+                    <div class="date-value" style="color: #001a4d; font-weight: 800;">23, 24 e 25 de setembro de 2026</div>
+                </div>
+                <div class="date-item" style="text-decoration: line-through; opacity: 0.6;">
+                    <div class="date-label">Abertura das submissões --- (Inscrições Encerradas)</div>
                     <div class="date-value">15 de abril de 2026</div>
                 </div>
-                <div class="date-item">
-                    <div class="date-label">Prazo para submissão de trabalhos</div>
+                <div class="date-item" style="text-decoration: line-through; opacity: 0.6;">
+                    <div class="date-label">Prazo para submissão de trabalhos --- (Inscrições Encerradas)</div>
                     <div class="date-value">30 de junho de 2026</div>
                 </div>
-                <div class="date-item">
+                <div class="date-item" style="text-decoration: line-through; opacity: 0.6;">
                     <div class="date-label">Notificação dos trabalhos aceitos</div>
                     <div class="date-value">28 de julho de 2026</div>
                 </div>
-                <div class="date-item">
+                <div class="date-item" style="text-decoration: line-through; opacity: 0.6;">
                     <div class="date-label">Envio da versão final dos trabalhos aceitos</div>
                     <div class="date-value">14 de agosto de 2026</div>
                 </div>
-                <div class="date-item">
+                <div class="date-item" style="text-decoration: line-through; opacity: 0.6;">
                     <div class="date-label">Inscrição de pelo menos um autor por trabalho</div>
                     <div class="date-value">14 de agosto de 2026</div>
                 </div>

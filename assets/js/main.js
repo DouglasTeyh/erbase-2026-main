@@ -147,7 +147,7 @@ async function loadAndRenderSpeakersCarousel() {
             card.innerHTML = `
                 <div class="speaker-card-inner">
                     <div class="speaker-card-front">
-                        <img src="${spk.imagem}" alt="${spk.nome}" class="speaker-img" style="${spk.posicao_imagem ? `object-position: ${spk.posicao_imagem};` : ''}">
+                        <img src="${spk.imagem}?v=${new Date().getTime()}" alt="${spk.nome}" class="speaker-img" style="${spk.posicao_imagem ? `object-position: ${spk.posicao_imagem};` : ''}">
                         <div class="speaker-info">
                             <h4 class="speaker-name">${spk.nome}</h4>
                             <p class="speaker-role">${spk.ocupacao}</p>
@@ -1246,7 +1246,26 @@ function showScheduleModal(eventData) {
         document.getElementById('schedule-modal-track').style.display = 'none';
     }
 
-    document.getElementById('schedule-modal-desc').innerHTML = eventData.descricao || '';
+    let formsLinkHtml = '';
+    const titleUpper = (eventData.titulo_curto || '').toUpperCase();
+    if (titleUpper.includes('BOOTCAMP')) {
+        formsLinkHtml = `
+            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #eee; text-align: center;">
+                <a href="https://docs.google.com/forms/u/4/d/e/1FAIpQLSdekwvKmixBsnlYdtRHnueetilVMBKUeT7EkWqEU2Rod9AC7g/viewform" target="_blank" class="action-btn" style="display: inline-flex; justify-content: center; background: linear-gradient(135deg, #ec4899, #8b5cf6); color: #fff !important; font-weight: 800; font-size: 0.9rem; padding: 12px 24px; border-radius: 8px; box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);">
+                    <i class="fa-solid fa-file-signature" style="margin-right: 8px;"></i> Inscrever-se no Bootcamp (Google Forms) <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px; font-size: 0.8rem;"></i>
+                </a>
+            </div>
+        `;
+    } else if (titleUpper.includes('OFICINA') || titleUpper.includes('MINICURSO')) {
+        formsLinkHtml = `
+            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #eee; text-align: center;">
+                <a href="https://forms.gle/EN7J21FfycoT44em8" target="_blank" class="action-btn" style="display: inline-flex; justify-content: center; background: linear-gradient(135deg, #00F2A5, #00c887); color: #000 !important; font-weight: 800; font-size: 0.9rem; padding: 12px 24px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0, 242, 165, 0.3);">
+                    <i class="fa-solid fa-file-signature" style="margin-right: 8px;"></i> Inscrever-se nesta atividade (Google Forms) <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px; font-size: 0.8rem;"></i>
+                </a>
+            </div>
+        `;
+    }
+    document.getElementById('schedule-modal-desc').innerHTML = (eventData.descricao || '') + formsLinkHtml;
 
     setTimeout(() => {
         modal.classList.add('active');
