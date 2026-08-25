@@ -105,7 +105,7 @@
 
 .sponsor-fapeal { max-height: 35px; }
 .sponsor-sebrae { max-height: 50px; }
-.sponsor-dtel { max-height: 45px; }
+.sponsor-dtel { max-height: 45px; filter: grayscale(100%) brightness(1.2); }
 .sponsor-secti { max-height: 50px; }
 .sponsor-maragogi { max-height: 50px; }
 .sponsor-cepene { max-height: 50px; }
