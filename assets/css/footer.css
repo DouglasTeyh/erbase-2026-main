@@ -113,18 +113,18 @@
 @media (min-width: 768px) {
     .sponsors-grid {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap !important;
         justify-content: center;
         align-items: center;
-        gap: 2.5rem;
+        gap: 2rem;
     }
     
-    .sponsor-fapeal { max-height: 55px; }
-    .sponsor-sebrae { max-height: 75px; }
-    .sponsor-dtel { max-height: 65px; }
-    .sponsor-secti { max-height: 75px; }
-    .sponsor-maragogi { max-height: 75px; }
-    .sponsor-cepene { max-height: 75px; }
+    .sponsor-fapeal { max-height: 45px; }
+    .sponsor-sebrae { max-height: 60px; }
+    .sponsor-dtel { max-height: 50px; filter: grayscale(100%) brightness(1.2); }
+    .sponsor-secti { max-height: 60px; }
+    .sponsor-maragogi { max-height: 60px; }
+    .sponsor-cepene { max-height: 60px; }
 }
 
 .apoio-institutions {
