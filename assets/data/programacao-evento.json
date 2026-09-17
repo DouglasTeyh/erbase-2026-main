@@ -101,7 +101,7 @@
     "titulo_curto": "OFICINA 2",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:15",
-    "hora_fim": "11:15",
+    "hora_fim": "10:30",
     "descricao": "<p><strong>Interfaces Offline-First: Resiliência no Desenvolvimento Web para a Interiorização Tecnológica</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Carlos Artur Alencar Cruz</strong><br><small style='color: #666;'>Graduando em Ciência da Computação | Universidade Federal de Sergipe (UFS)</small></li></ul>"
   },
   {
@@ -109,7 +109,7 @@
     "titulo_curto": "OFICINA 3",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:15",
-    "hora_fim": "11:15",
+    "hora_fim": "10:30",
     "descricao": "<p><strong>Construindo projetos de diversidade de gênero na Computação: uma abordagem prática</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Gabriela de Vasconcelos</strong><br><small style='color: #666;'>Docente | Instituto Federal de Alagoas (IFAL), Campus Santana do Ipanema</small></li></ul>"
   },
   {
@@ -117,7 +117,7 @@
     "titulo_curto": "MINICURSO 3",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:15",
-    "hora_fim": "11:15",
+    "hora_fim": "10:30",
     "descricao": "<p><strong>Visão Computacional: Ensinando Computadores a Enxergar o Mundo</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Yulle Gustavo Siqueira de Lima</strong><br><small style='color: #666;'>Docente | Instituto Federal de Pernambuco (IFPE), Campus Palmares</small></li></ul>"
   },
   {
@@ -156,8 +156,8 @@
     "dia_evento": 24,
     "titulo_curto": "PALESTRA 2",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "10:00",
-    "hora_fim": "12:00",
+    "hora_inicio": "10:30",
+    "hora_fim": "12:30",
     "descricao": "<p><strong>Robótica Educacional na Primeira Infância: Criatividade, Inclusão e Pensamento Computacional na Educação Básica - A Experiência do Projeto ERTA</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Simone de Lucena Ferreira</strong><br><small>Universidade Federal de Sergipe (UFS)</small></li><li><i class='fa-solid fa-user-tie' style='color:#00F2A5;'></i> <strong>José Paulo Gomes Brasão</strong><br><small>Universidade da Madeira (UMa) - Funchal, Portugal</small></li><li style='margin-top: 8px;'><i class='fa-solid fa-user-tie' style='color:#FF6B6B;'></i> <strong>Lúcia Amante</strong><br><small>Universidade Aberta (UAb) - LE@D, Lisboa, Portugal</small></li></ul>"
   },
   {
@@ -253,7 +253,7 @@
     "titulo_curto": "OFICINA 4",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:15",
-    "hora_fim": "11:15",
+    "hora_fim": "10:30",
     "descricao": "<p><strong>Pensamento Computacional e Robótica com LEGO Mindstorms</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Brena Maia Santos</strong><br><small style='color: #666;'>Docente | Instituto Federal do Sertão Pernambucano (IFSertãoPE), Campus Salgueiro</small></li></ul>"
   },
   {
@@ -261,7 +261,7 @@
     "titulo_curto": "MINICURSO 7",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:15",
-    "hora_fim": "11:15",
+    "hora_fim": "10:30",
     "descricao": "<p><strong>Construção de aplicações interdisciplinares de realidade aumentada com navegadores Web</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Sandro César Silveira Jucá</strong><br><small style='color: #666;'>Docente | Instituto Federal do Ceará (IFCE), Campus Fortaleza</small></li></ul>"
   },
   {
@@ -269,7 +269,7 @@
     "titulo_curto": "MINICURSO 8",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:15",
-    "hora_fim": "11:15",
+    "hora_fim": "10:30",
     "descricao": "<p><strong>Tecnologias digitais e currículo no contexto da inovação pedagógica: emergências contemporâneas</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Prof. Paulo Brazão, Prof. Alice Mendonça, Prof. Dora Pombo</strong><br><small style='color: #666;'>Universidade da Madeira - Portugal</small></li></ul>"
   },
   {
@@ -292,7 +292,7 @@
     "dia_evento": 25,
     "titulo_curto": "PALESTRA 4",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "11:15",
+    "hora_inicio": "10:30",
     "hora_fim": "12:30",
     "descricao": "<p><strong>Ecossistemas de inovação no Nordeste: do Porto Digital ao interior – desafios e oportunidades de interiorização da economia digital</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li style='margin-bottom: 8px;'><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Heraldo Ourem</strong><br><small>Porto Digital</small></li></ul>"
   },

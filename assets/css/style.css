@@ -930,6 +930,59 @@ section#palestrantes::after {
     display: grid;
 }
 
+.schedule-empty-warnings {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.schedule-empty-warnings-inner {
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 10px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(0, 162, 213, 0.08), rgba(0, 242, 165, 0.08));
+    border: 1px solid rgba(0, 162, 213, 0.2);
+    border-left: 4px solid #00A2D5;
+}
+
+.schedule-empty-warnings-inner.active.has-warnings {
+    display: flex;
+}
+
+.schedule-warning-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #001a4d;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.schedule-warning-title i {
+    color: #00A2D5;
+}
+
+.schedule-warning-tags {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.schedule-warning-tag {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #0077a3;
+    background: #fff;
+    border: 1px solid rgba(0, 162, 213, 0.3);
+    border-radius: 50px;
+    padding: 3px 12px;
+    white-space: nowrap;
+}
+
 .grid-header {
     background-color: #f8f9fa;
     font-weight: bold;

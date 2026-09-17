@@ -314,17 +314,40 @@ function initSpeakerCarouselJS() {
     });
 }
 
+function updateScheduleEmptyWarnings(events) {
+    if (!document.getElementById('schedule-empty-warnings')) return;
+
+    const warningsByDay = {};
+    events.forEach(ev => {
+        if (ev.nome_evento === 'BREAK') return;
+        warningsByDay[ev.dia_evento] = warningsByDay[ev.dia_evento] || new Set();
+        warningsByDay[ev.dia_evento].add(ev.nome_evento);
+    });
+
+    const allBases = ["PesqBASE", "WeiBASE", "RoboBASE", "XBASE", "ProgBASE", "Meninas DigiBASE"];
+
+    [23, 24, 25].forEach(day => {
+        const container = document.getElementById(`empty-warnings-${day}`);
+        if (!container) return;
+        const present = warningsByDay[day] || new Set();
+        const missing = allBases.filter(b => !present.has(b));
+        if (missing.length === 0) {
+            container.innerHTML = '';
+            container.classList.remove('has-warnings');
+            return;
+        }
+        container.classList.add('has-warnings');
+        container.innerHTML = `
+            <span class="schedule-warning-title"><i class="fa-solid fa-circle-info"></i> Trilhas sem atividades neste dia:</span>
+            <span class="schedule-warning-tags">
+                ${missing.map(m => `<span class="schedule-warning-tag">${m}</span>`).join('')}
+            </span>
+        `;
+    });
+}
+
 async function loadAndRenderSchedule() {
-    const colMap = {
-        "EVENTO PRINCIPAL": 2,
-        "PesqBASE": 3,
-        "WeiBASE": 4,
-        "RoboBASE": 5,
-        "XBASE": 6,
-        "ProgBASE": 7,
-        "Meninas DigiBASE": 8,
-        "BREAK": "2 / span 7"
-    };
+    const COL_ORDER = ["EVENTO PRINCIPAL", "PesqBASE", "WeiBASE", "RoboBASE", "XBASE", "ProgBASE", "Meninas DigiBASE"];
 
     const colorMap = {
         "EVENTO PRINCIPAL": "event-blue",
@@ -395,7 +418,8 @@ async function loadAndRenderSchedule() {
             if (!eventsByDayCol[key]) eventsByDayCol[key] = [];
             eventsByDayCol[key].push(ev);
         });
-        Object.values(eventsByDayCol).forEach(colEvents => {
+        const colLanesByDayCol = {};
+        Object.entries(eventsByDayCol).forEach(([key, colEvents]) => {
             colEvents.sort((a, b) => timeToMins(a.hora_inicio) - timeToMins(b.hora_inicio));
 
             let columns = [];
@@ -416,6 +440,8 @@ async function loadAndRenderSchedule() {
                 }
             });
 
+            colLanesByDayCol[key] = columns.length;
+
             colEvents.forEach(ev => {
                 ev._totalCols = columns.length;
                 
@@ -434,6 +460,8 @@ async function loadAndRenderSchedule() {
             });
         });
 
+        const dayColumnMaps = {};
+
         document.querySelectorAll('.schedule-grid').forEach(grid => {
 
             Array.from(grid.children).forEach(child => {
@@ -443,6 +471,46 @@ async function loadAndRenderSchedule() {
             });
         });
 
+        // Determina colunas que possuem eventos por dia e reorganiza o grid
+        const grids = document.querySelectorAll('.schedule-grid');
+        grids.forEach(grid => {
+            const dayId = grid.id.replace('day-', '');
+            const colsUsed = COL_ORDER.filter(colName =>
+                events.some(ev => ev.dia_evento === parseInt(dayId, 10) && ev.nome_evento === colName)
+            );
+
+            // Mapa: nome do evento -> coluna (começa na coluna 2, 1 = horario)
+            const colMap = {};
+            colsUsed.forEach((name, i) => { colMap[name] = i + 2; });
+
+            // Largura proporcional ao numero de eventos simultaneos (faixas) de cada coluna
+            const colWidths = colsUsed.map(name => {
+                const lanes = colLanesByDayCol[`${dayId}-${name}`] || 1;
+                return { name, lanes };
+            });
+            const totalLanes = colWidths.reduce((sum, c) => sum + c.lanes, 0);
+            const templateCols = colWidths.map(c => `${c.lanes * 100 / totalLanes}fr`).join(' ');
+            grid.style.gridTemplateColumns = `70px ${templateCols}`;
+            grid.style.minWidth = `${70 + totalLanes * 150}px`;
+            grid.setAttribute('data-total-cols', colsUsed.length);
+
+            dayColumnMaps[dayId] = colMap;
+
+            // Reordena e esconde headers das colunas vazias
+            const headers = grid.querySelectorAll('.grid-header');
+            headers.forEach(h => {
+                const label = h.textContent.trim();
+                if (label && colMap[label]) {
+                    h.style.gridColumn = String(colMap[label]);
+                    h.style.display = '';
+                } else if (label) {
+                    h.style.display = 'none';
+                }
+            });
+        });
+
+        updateScheduleEmptyWarnings(events);
+
         events.forEach(ev => {
             const dayGrid = document.getElementById(`day-${ev.dia_evento}`);
             if (!dayGrid) return;
@@ -450,7 +518,14 @@ async function loadAndRenderSchedule() {
             const startRow = `time-${(ev.hora_inicio || '').replace(':', '')}`;
             const endRow = `time-${(ev.hora_fim || '').replace(':', '')}`;
 
-            const col = colMap[ev.nome_evento] || 2;
+            const dayColMap = dayColumnMaps[ev.dia_evento] || {};
+            let col;
+            if (ev.nome_evento === 'BREAK') {
+                const totalCols = Object.keys(dayColMap).length;
+                col = `2 / span ${totalCols}`;
+            } else {
+                col = dayColMap[ev.nome_evento] || 2;
+            }
             const colorClass = ev.cor || colorMap[ev.nome_evento] || "event-blue";
 
             const el = document.createElement('div');
@@ -1166,6 +1241,11 @@ function initScheduleTabs() {
             tab.classList.add('active');
             const dayId = `day-${tab.dataset.day}`;
             document.getElementById(dayId).classList.add('active');
+
+            document.querySelectorAll('.schedule-empty-warnings-inner').forEach(w => {
+                const isActiveDay = w.id === ('empty-warnings-' + tab.dataset.day);
+                w.classList.toggle('active', isActiveDay);
+            });
         });
     });
 }
