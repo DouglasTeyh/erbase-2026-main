@@ -829,6 +829,7 @@ section#palestrantes::after {
     color: #00A2D5;
     font-size: 1rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .speaker-short-desc {
