@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/navbar.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+</head><body>
+<main id="app-content">
 <section class="event-hero full-width"
     style="background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
     <div class="hero-back-btn-container scroll-animate">
@@ -609,3 +617,33 @@
 
     </div>
 </section>
+</main>
+<pre id="__report"></pre>
+<script>
+window.addEventListener('load', function(){
+  var lines = [];
+  var vw = document.documentElement.clientWidth;
+  var de = document.documentElement;
+  lines.push('viewport=' + vw + ' scrollW=' + de.scrollWidth + ' clientW=' + de.clientWidth + ' bodyScrollW=' + document.body.scrollWidth);
+  document.querySelectorAll('main *').forEach(function(el){
+    var r = el.getBoundingClientRect();
+    if (r.width === 0 && r.height === 0) return;
+    if (r.right > vw + 1.5 || r.left < -1.5) {
+      var cls = (el.className && el.className.toString) ? el.className.toString().slice(0,50) : '';
+      lines.push('OVERFLOW ' + el.tagName + ' .' + cls + ' left=' + r.left.toFixed(1) + ' right=' + r.right.toFixed(1) + ' text=' + (el.textContent||'').trim().slice(0,40));
+    }
+  });
+  document.querySelectorAll('.committee-item').forEach(function(el){
+    if (el.scrollWidth > el.clientWidth + 1) lines.push('ITEM-OVERFLOW scrollW=' + el.scrollWidth + ' clientW=' + el.clientWidth + ' text=' + (el.textContent||'').trim().slice(0,45));
+  });
+  var items = Array.prototype.slice.call(document.querySelectorAll('.committee-item'));
+  for (var i=0;i<items.length;i++) for (var j=i+1;j<items.length;j++){
+    var a=items[i].getBoundingClientRect(), b=items[j].getBoundingClientRect();
+    var ox=Math.min(a.right,b.right)-Math.max(a.left,b.left), oy=Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top);
+    if (ox>2 && oy>2) lines.push('OVERLAP-ITEM ['+(items[i].textContent||'').trim().slice(0,25)+'] x ['+(items[j].textContent||'').trim().slice(0,25)+'] ox='+ox.toFixed(1));
+  }
+  lines.push('TOTAL committee-item=' + items.length);
+  document.getElementById('__report').textContent = lines.join('\n');
+});
+</script>
+</body></html>

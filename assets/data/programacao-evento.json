@@ -21,7 +21,7 @@
     "titulo_curto": "OFICINA 1",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "14:00",
-    "hora_fim": "17:30",
+    "hora_fim": "17:00",
     "descricao": "<p><strong>Espaço 4.0 e Manna Team apresentam: Educação 5.0 e Cultura Maker</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Vagas:</strong> 15</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Renata Imaculada Soares Pereira / Cassiano Henrique de Albuquerque</strong><br><small style='color: #666;'>Instituto Federal de Alagoas (IFAL)</small></li></ul>"
   },
   {
@@ -29,7 +29,7 @@
     "titulo_curto": "MINICURSO 1",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "14:00",
-    "hora_fim": "17:30",
+    "hora_fim": "17:00",
     "descricao": "<p><strong>Python por Elas: Ciência de Dados e a Realidade das Mulheres na Tecnologia</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Vagas:</strong> 20</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Valéria Silva Santos</strong><br><small style='color: #666;'>Graduanda | Universidade Federal de Alagoas (UFAL), Campus Arapiraca – Unidade Educacional Penedo</small></li></ul>"
   },
   {
@@ -37,16 +37,16 @@
     "titulo_curto": "MINICURSO 2",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "14:00",
-    "hora_fim": "17:30",
+    "hora_fim": "17:00",
     "descricao": "<p><strong>Como os ecossistemas de inovação estão sendo redefinidos por mulheres</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Vagas:</strong> 30</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Pâmela Karolina Dias</strong><br><small style='color: #666;'>Docente | Centro Universitário Tabosa de Almeida (Asces-Unita)</small></li></ul>"
   },
   {
     "dia_evento": 23,
-    "titulo_curto": "PESQBASE - SESSÃO 1",
+    "titulo_curto": "PesqBASE - SESSÃO 1",
     "nome_evento": "PesqBase",
     "hora_inicio": "14:00",
     "hora_fim": "17:30",
-    "descricao": "PESQBASE - SESSÃO 1"
+    "descricao": "PesqBASE - SESSÃO 1"
   },
   {
     "dia_evento": 23,
@@ -58,19 +58,19 @@
   },
   {
     "dia_evento": 23,
-    "titulo_curto": "PROGBASE - AQUECIMENTO",
+    "titulo_curto": "ProgBASE - AQUECIMENTO",
     "nome_evento": "ProgBase",
     "hora_inicio": "14:00",
     "hora_fim": "17:30",
-    "descricao": "Sessão de aquecimento para competidores do ProgBase."
+    "descricao": "Sessão de aquecimento para competidores do ProgBASE."
   },
   {
     "dia_evento": 23,
-    "titulo_curto": "WEIBASE - SESSÃO 1",
+    "titulo_curto": "WeiBASE - SESSÃO 1",
     "nome_evento": "WeiBase",
     "hora_inicio": "14:00",
     "hora_fim": "17:30",
-    "descricao": "WEIBASE - SESSÃO 1"
+    "descricao": "WeiBASE - SESSÃO 1"
   },
   {
     "dia_evento": 23,
@@ -90,7 +90,7 @@
   },
   {
     "dia_evento": 23,
-    "titulo_curto": "Palestra dos Reitores",
+    "titulo_curto": "PALESTRA 1",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "19:30",
     "hora_fim": "20:30",
@@ -101,7 +101,7 @@
     "titulo_curto": "OFICINA 2",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
-    "hora_fim": "10:00",
+    "hora_fim": "11:00",
     "descricao": "<p><strong>Interfaces Offline-First: Resiliência no Desenvolvimento Web para a Interiorização Tecnológica</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Vagas:</strong> 15</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Carlos Artur Alencar Cruz</strong><br><small style='color: #666;'>Graduando em Ciência da Computação | Universidade Federal de Sergipe (UFS)</small></li></ul>"
   },
   {
@@ -109,7 +109,7 @@
     "titulo_curto": "OFICINA 3",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
-    "hora_fim": "10:00",
+    "hora_fim": "11:00",
     "descricao": "<p><strong>Construindo projetos de diversidade de gênero na Computação: uma abordagem prática</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Vagas:</strong> 20</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Gabriela de Vasconcelos</strong><br><small style='color: #666;'>Docente | Instituto Federal de Alagoas (IFAL), Campus Santana do Ipanema</small></li></ul>"
   },
   {
@@ -117,16 +117,16 @@
     "titulo_curto": "MINICURSO 3",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
-    "hora_fim": "10:00",
+    "hora_fim": "11:00",
     "descricao": "<p><strong>Visão Computacional: Ensinando Computadores a Enxergar o Mundo</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Vagas:</strong> 30</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Yulle Gustavo Siqueira de Lima</strong><br><small style='color: #666;'>Docente | Instituto Federal de Pernambuco (IFPE), Campus Palmares</small></li></ul>"
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "PESQBASE - SESSÃO 2",
+    "titulo_curto": "PesqBASE - SESSÃO 2",
     "nome_evento": "PesqBase",
     "hora_inicio": "08:00",
     "hora_fim": "12:00",
-    "descricao": "PESQBASE - SESSÃO 2"
+    "descricao": "PesqBASE - SESSÃO 2"
   },
   {
     "dia_evento": 24,
@@ -134,7 +134,7 @@
     "nome_evento": "RoboBase",
     "hora_inicio": "08:00",
     "hora_fim": "12:00",
-    "descricao": "MINICURSO, DEMONSTRAÇÕES e TREINOS DA ROBOBASE"
+    "descricao": "MINICURSO, DEMONSTRAÇÕES e TREINOS DA RoboBASE"
   },
   {
     "dia_evento": 24,
@@ -146,16 +146,16 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "WEIBASE - SESSÃO 2",
+    "titulo_curto": "WeiBASE - SESSÃO 2",
     "nome_evento": "WeiBase",
     "hora_inicio": "08:00",
     "hora_fim": "12:00",
-    "descricao": "WEIBASE - SESSÃO 2"
+    "descricao": "WeiBASE - SESSÃO 2"
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "MENINAS DIGIBASE - OFICINA",
-    "nome_evento": "Meninas DigiBase",
+    "titulo_curto": "Meninas DigiBASE - OFICINA",
+    "nome_evento": "Meninas DigiBASE",
     "hora_inicio": "08:00",
     "hora_fim": "11:00",
     "descricao": "<p><strong>Construindo projetos de diversidade de gênero na Computação: uma abordagem prática</strong></p><p style='margin-top: 10px; font-size: 0.95rem; color: #555;'>A sub-representação de mulheres na Computação ainda é um desafio significativo. Esta oficina apresenta estratégias para a concepção, implementação e avaliação de iniciativas voltadas à promoção da diversidade de gênero.</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Gabriela de Vasconcelos</strong><br><small>IFAL Campus Santana do Ipanema</small></li></ul>"
@@ -186,7 +186,7 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "COMPETIÇÕES DA ROBOBASE",
+    "titulo_curto": "COMPETIÇÕES DA RoboBASE",
     "nome_evento": "RoboBase",
     "hora_inicio": "13:30",
     "hora_fim": "17:30",
@@ -202,11 +202,11 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "MENINAS DIGIBASE",
-    "nome_evento": "Meninas DigiBase",
+    "titulo_curto": "Meninas DigiBASE",
+    "nome_evento": "Meninas DigiBASE",
     "hora_inicio": "13:30",
     "hora_fim": "17:30",
-    "descricao": "Sessões e atividades Meninas DigiBase"
+    "descricao": "Sessões e atividades Meninas DigiBASE"
   },
   {
     "dia_evento": 24,
@@ -234,26 +234,26 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "PESQBASE - SESSÃO 3",
+    "titulo_curto": "PesqBASE - SESSÃO 3",
     "nome_evento": "PesqBase",
     "hora_inicio": "15:30",
     "hora_fim": "17:30",
-    "descricao": "PESQBASE - SESSÃO 3"
+    "descricao": "PesqBASE - SESSÃO 3"
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "WEIBASE - SESSÃO 3",
+    "titulo_curto": "WeiBASE - SESSÃO 3",
     "nome_evento": "WeiBase",
     "hora_inicio": "15:30",
     "hora_fim": "17:30",
-    "descricao": "WEIBASE - SESSÃO 3"
+    "descricao": "WeiBASE - SESSÃO 3"
   },
   {
     "dia_evento": 25,
     "titulo_curto": "OFICINA 4",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "08:00",
-    "hora_fim": "10:30",
+    "hora_fim": "11:00",
     "descricao": "<p><strong>Pensamento Computacional e Robótica com LEGO Mindstorms</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Vagas:</strong> 15</p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Brena Maia Santos</strong><br><small style='color: #666;'>Docente | Instituto Federal do Sertão Pernambucano (IFSertãoPE), Campus Salgueiro</small></li></ul>"
   },
   {
@@ -274,19 +274,19 @@
   },
   {
     "dia_evento": 25,
-    "titulo_curto": "BOOTCAMP MENINAS DIGIBASE",
-    "nome_evento": "Meninas DigiBase",
+    "titulo_curto": "BOOTCAMP Meninas DigiBASE",
+    "nome_evento": "Meninas DigiBASE",
     "hora_inicio": "08:00",
     "hora_fim": "16:30",
-    "descricao": "<p><strong>Bootcamp Meninas DigiBase</strong></p><p style='margin-top: 10px; font-size: 0.95rem; color: #555;'>Bootcamp intensivo focado no desenvolvimento de iniciativas de atração e permanência de meninas e mulheres na área da Computação.</p>"
+    "descricao": "<p><strong>Bootcamp Meninas DigiBASE</strong></p><p style='margin-top: 10px; font-size: 0.95rem; color: #555;'>Bootcamp intensivo focado no desenvolvimento de iniciativas de atração e permanência de meninas e mulheres na área da Computação.</p>"
   },
   {
     "dia_evento": 25,
-    "titulo_curto": "COMPETIÇÃO PROGBASE",
+    "titulo_curto": "COMPETIÇÃO ProgBASE",
     "nome_evento": "ProgBase",
     "hora_inicio": "08:00",
     "hora_fim": "13:00",
-    "descricao": "Maratona de Programação ProgBase (08:00 às 13:00)"
+    "descricao": "Maratona de Programação ProgBASE (08:00 às 13:00)"
   },
   {
     "dia_evento": 25,
@@ -306,19 +306,19 @@
   },
   {
     "dia_evento": 25,
-    "titulo_curto": "PESQBASE - SESSÃO 4",
+    "titulo_curto": "PesqBASE - SESSÃO 4",
     "nome_evento": "PesqBase",
     "hora_inicio": "13:30",
     "hora_fim": "16:30",
-    "descricao": "PESQBASE - SESSÃO 4"
+    "descricao": "PesqBASE - SESSÃO 4"
   },
   {
     "dia_evento": 25,
-    "titulo_curto": "WEIBASE - SESSÃO 4",
+    "titulo_curto": "WeiBASE - SESSÃO 4",
     "nome_evento": "WeiBase",
     "hora_inicio": "13:30",
     "hora_fim": "16:30",
-    "descricao": "WEIBASE - SESSÃO 4"
+    "descricao": "WeiBASE - SESSÃO 4"
   },
   {
     "dia_evento": 25,
@@ -330,19 +330,11 @@
   },
   {
     "dia_evento": 25,
-    "titulo_curto": "PESQBASE - SESSÃO 5",
-    "nome_evento": "PesqBase",
-    "hora_inicio": "13:30",
-    "hora_fim": "16:30",
-    "descricao": "PESQBASE - SESSÃO 5"
-  },
-  {
-    "dia_evento": 25,
-    "titulo_curto": "WEIBASE - SESSÃO 5",
+    "titulo_curto": "WeiBASE - SESSÃO 5",
     "nome_evento": "WeiBase",
     "hora_inicio": "13:30",
     "hora_fim": "16:30",
-    "descricao": "WEIBASE - SESSÃO 5"
+    "descricao": "WeiBASE - SESSÃO 5"
   },
   {
     "dia_evento": 25,
@@ -350,6 +342,6 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "16:30",
     "hora_fim": "18:00",
-    "descricao": "Solenidade de Premiação das Competições, Encerramento Oficial e Lançamento da ERBASE 2027."
+    "descricao": "Solenidade de Premiação das Competições, anúncio do BEST PAPER, Encerramento Oficial e Lançamento da ERBASE 2027."
   }
 ]

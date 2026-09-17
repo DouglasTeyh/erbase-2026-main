@@ -1606,14 +1606,22 @@ section#palestrantes::after {
 }
 
 .committee-item {
+    position: relative;
     padding: 15px;
     text-align: left;
+    min-width: 0;
+}
+
+.committee-item > div:last-child {
+    min-width: 0;
+    flex: 1 1 auto;
 }
 
 .committee-item strong {
     display: block;
     color: #00A2D5;
     margin-bottom: 5px;
+    overflow-wrap: anywhere;
 }
 
 .committee-item span {
@@ -1621,7 +1629,11 @@ section#palestrantes::after {
     margin-right: 15px;
     font-size: 0.9rem;
     color: #888;
-    white-space: nowrap;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    vertical-align: top;
 }
 
 .committee-item span:not(:last-child)::after {
@@ -3068,16 +3080,17 @@ main .submission-box p {
 
 /* Committee Profile Hover Card */
 .avatar-container {
-    position: relative;
+    position: static;
     display: inline-block;
 }
 
 .profile-hover-card {
     position: absolute;
-    bottom: 80px;
+    bottom: calc(100% + 12px);
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    width: 450px;
+    width: min(400px, calc(100vw - 32px));
+    max-width: calc(100vw - 32px);
     background: #ffffff;
     border: 1px solid rgba(0, 162, 213, 0.3);
     backdrop-filter: blur(10px);
@@ -3177,8 +3190,8 @@ main .submission-box p {
 /* Responsive updates for hover card on mobile */
 @media (max-width: 600px) {
     .profile-hover-card {
-        width: calc(100vw - 40px);
-        max-width: 450px;
+        width: min(400px, calc(100vw - 40px));
+        max-width: calc(100vw - 40px);
         flex-direction: column;
         text-align: center;
         gap: 15px;

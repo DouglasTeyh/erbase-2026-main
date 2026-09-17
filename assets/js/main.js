@@ -322,7 +322,7 @@ async function loadAndRenderSchedule() {
         "RoboBase": 5,
         "XBase": 6,
         "ProgBase": 7,
-        "Meninas DigiBase": 8,
+        "Meninas DigiBASE": 8,
         "BREAK": "2 / span 7"
     };
 
@@ -333,7 +333,7 @@ async function loadAndRenderSchedule() {
         "RoboBase": "event-red",
         "XBase": "event-pink",
         "ProgBase": "event-green",
-        "Meninas DigiBase": "event-purple",
+        "Meninas DigiBASE": "event-purple",
         "BREAK": "event-break"
     };
 
@@ -652,7 +652,7 @@ window.editEvent = function (index) {
     document.getElementById('modal-title').textContent = index >= 0 ? 'Editar Evento' : 'Novo Evento';
 
     const dias = [23, 24, 25];
-    const trilhas = ['EVENTO PRINCIPAL', 'PesqBase', 'WeiBase', 'RoboBase', 'XBase', 'ProgBase', 'Meninas DigiBase', 'BREAK'];
+    const trilhas = ['EVENTO PRINCIPAL', 'PesqBase', 'WeiBase', 'RoboBase', 'XBase', 'ProgBase', 'Meninas DigiBASE', 'BREAK'];
 
     document.getElementById('modal-form-container').innerHTML = `
         <div class="admin-form-grid">
