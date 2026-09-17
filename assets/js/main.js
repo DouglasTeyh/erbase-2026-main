@@ -918,7 +918,7 @@ function initCoolAnimations() {
         });
     });
 
-    const cardElements = document.querySelectorAll('.event-card, .speaker-card, .schedule-event, .hero-img');
+    const cardElements = document.querySelectorAll('.event-card, .schedule-event, .hero-img');
     cardElements.forEach((el, i) => {
 
         el.style.opacity = "1";
