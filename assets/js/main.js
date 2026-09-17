@@ -317,22 +317,22 @@ function initSpeakerCarouselJS() {
 async function loadAndRenderSchedule() {
     const colMap = {
         "EVENTO PRINCIPAL": 2,
-        "PesqBase": 3,
-        "WeiBase": 4,
-        "RoboBase": 5,
-        "XBase": 6,
-        "ProgBase": 7,
+        "PesqBASE": 3,
+        "WeiBASE": 4,
+        "RoboBASE": 5,
+        "XBASE": 6,
+        "ProgBASE": 7,
         "Meninas DigiBASE": 8,
         "BREAK": "2 / span 7"
     };
 
     const colorMap = {
         "EVENTO PRINCIPAL": "event-blue",
-        "PesqBase": "event-yellow",
-        "WeiBase": "event-teal",
-        "RoboBase": "event-red",
-        "XBase": "event-pink",
-        "ProgBase": "event-green",
+        "PesqBASE": "event-yellow",
+        "WeiBASE": "event-teal",
+        "RoboBASE": "event-red",
+        "XBASE": "event-pink",
+        "ProgBASE": "event-green",
         "Meninas DigiBASE": "event-purple",
         "BREAK": "event-break"
     };
@@ -652,7 +652,7 @@ window.editEvent = function (index) {
     document.getElementById('modal-title').textContent = index >= 0 ? 'Editar Evento' : 'Novo Evento';
 
     const dias = [23, 24, 25];
-    const trilhas = ['EVENTO PRINCIPAL', 'PesqBase', 'WeiBase', 'RoboBase', 'XBase', 'ProgBase', 'Meninas DigiBASE', 'BREAK'];
+    const trilhas = ['EVENTO PRINCIPAL', 'PesqBASE', 'WeiBASE', 'RoboBASE', 'XBASE', 'ProgBASE', 'Meninas DigiBASE', 'BREAK'];
 
     document.getElementById('modal-form-container').innerHTML = `
         <div class="admin-form-grid">

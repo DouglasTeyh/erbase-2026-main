@@ -913,7 +913,7 @@ section#palestrantes::after {
 .schedule-grid {
     display: none;
     grid-template-columns: 70px 3.5fr repeat(6, 1fr);
-    grid-template-rows: [header] 60px [time-0800] 30px [time-0830] 30px [time-0900] 30px [time-0930] 30px [time-1000] 30px [time-1030] 30px [time-1100] 30px [time-1130] 30px [time-1200] 30px [time-1230] 30px [time-1300] 30px [time-1330] 30px [time-1400] 30px [time-1430] 30px [time-1500] 30px [time-1530] 30px [time-1600] 30px [time-1630] 30px [time-1700] 30px [time-1730] 30px [time-1800] 30px [time-1830] 30px [time-1900] 30px [time-1930] 30px [time-2000] 30px [time-2030] 30px;
+    grid-template-rows: [header] 60px [time-0745] 15px [time-0800] 15px [time-0815] 15px [time-0830] 30px [time-0900] 30px [time-0930] 30px [time-1000] 30px [time-1030] 30px [time-1100] 15px [time-1115] 15px [time-1130] 30px [time-1200] 15px [time-1215] 15px [time-1230] 30px [time-1300] 15px [time-1315] 15px [time-1330] 30px [time-1400] 30px [time-1430] 30px [time-1500] 30px [time-1530] 30px [time-1600] 30px [time-1630] 30px [time-1700] 30px [time-1730] 30px [time-1800] 30px [time-1830] 30px [time-1900] 30px [time-1930] 30px [time-2000] 30px [time-2030] 30px;
     width: 100%;
     min-width: 1400px; /* Base para mobile/tablet scroll */
 }
@@ -1209,7 +1209,7 @@ section#palestrantes::after {
     .schedule-grid {
         grid-template-columns: 60px 4fr repeat(6, 1fr);
         min-width: 1300px; /* Expandido para que os 3 cards do Evento Principal no Dia 24/25 não fiquem esmagados */
-        grid-template-rows: [header] 40px [time-0800] 30px [time-0830] 30px [time-0900] 30px [time-0930] 30px [time-1000] 30px [time-1030] 30px [time-1100] 30px [time-1130] 30px [time-1200] 30px [time-1230] 30px [time-1300] 30px [time-1330] 30px [time-1400] 30px [time-1430] 30px [time-1500] 30px [time-1530] 30px [time-1600] 30px [time-1630] 30px [time-1700] 30px [time-1730] 30px [time-1800] 30px [time-1830] 30px [time-1900] 30px [time-1930] 30px [time-2000] 30px [time-2030] 30px;
+        grid-template-rows: [header] 40px [time-0745] 15px [time-0800] 15px [time-0815] 15px [time-0830] 30px [time-0900] 30px [time-0930] 30px [time-1000] 30px [time-1030] 30px [time-1100] 15px [time-1115] 15px [time-1130] 30px [time-1200] 15px [time-1215] 15px [time-1230] 30px [time-1300] 15px [time-1315] 15px [time-1330] 30px [time-1400] 30px [time-1430] 30px [time-1500] 30px [time-1530] 30px [time-1600] 30px [time-1630] 30px [time-1700] 30px [time-1730] 30px [time-1800] 30px [time-1830] 30px [time-1900] 30px [time-1930] 30px [time-2000] 30px [time-2030] 30px;
     }
 
     .grid-header {
@@ -1704,6 +1704,78 @@ section#palestrantes::after {
 @media (max-width: 768px) {
     .bullet-list {
         columns: 1;
+    }
+}
+
+/* --- SEQUÊNCIA DE APRESENTAÇÕES (SESSÕES) --- */
+.session-block {
+    margin-top: 45px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 162, 213, 0.1);
+}
+
+.session-title {
+    color: #001a4d;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.session-meta {
+    font-size: 0.95rem;
+    color: #00A2D5;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(0, 162, 213, 0.15);
+}
+
+.paper-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.paper-item {
+    padding: 14px 18px;
+    border-left: 4px solid #00F2A5;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    text-align: justify;
+    hyphens: auto;
+    font-size: 0.95rem;
+}
+
+.paper-id {
+    display: inline-block;
+    font-weight: 800;
+    color: #00A2D5;
+    margin-right: 8px;
+}
+
+.paper-title {
+    font-weight: 600;
+    color: #001a4d;
+}
+
+.paper-authors {
+    color: #666;
+    font-size: 0.88rem;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .session-block {
+        padding: 20px;
+    }
+    .session-title {
+        font-size: 1.05rem;
     }
 }
 
