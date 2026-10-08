@@ -20,9 +20,9 @@
     "dia_evento": 23,
     "titulo_curto": "OFICINA 1",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "14:00",
+    "hora_inicio": "15:00",
     "hora_fim": "17:00",
-    "descricao": "<p><strong>Espaço 4.0 e Manna Team apresentam: Educação 5.0 e Cultura Maker</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Renata Imaculada Soares Pereira / Cassiano Henrique de Albuquerque</strong><br><small style='color: #666;'>Instituto Federal de Alagoas (IFAL)</small></li></ul>"
+    "descricao": "<p><strong>Projetando e Construindo Robô de Competição Mega Sumô de Baixo Custo – Estudo de Caso do Robô Mega Mabuchi</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Vagas: 15</strong> | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Ivanoé João Rodowanski</strong><br><small style='color: #666;'>Docente | Universidade Federal do Recôncavo da Bahia (UFRB)</small></li></ul>"
   },
   {
     "dia_evento": 23,
@@ -34,11 +34,11 @@
   },
   {
     "dia_evento": 23,
-    "titulo_curto": "MINICURSO 2",
+    "titulo_curto": "OFICINA 2",
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "14:00",
     "hora_fim": "17:00",
-    "descricao": "<p><strong>Como os ecossistemas de inovação estão sendo redefinidos por mulheres</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Pâmela Karolina Dias</strong><br><small style='color: #666;'>Docente | Centro Universitário Tabosa de Almeida (Asces-Unita)</small></li></ul>"
+    "descricao": "<p><strong>Construindo projetos de diversidade de gênero na Computação: uma abordagem prática</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala 4 | <strong>Vagas: 30</strong> | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Gabriela de Vasconcelos</strong><br><small style='color: #666;'>Docente | Instituto Federal de Alagoas (IFAL), Campus Santana do Ipanema</small></li></ul>"
   },
   {
     "dia_evento": 23,
@@ -98,27 +98,27 @@
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "OFICINA 2",
+    "titulo_curto": "MINICURSO 2",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "08:15",
-    "hora_fim": "10:30",
-    "descricao": "<p><strong>Interfaces Offline-First: Resiliência no Desenvolvimento Web para a Interiorização Tecnológica</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Carlos Artur Alencar Cruz</strong><br><small style='color: #666;'>Graduando em Ciência da Computação | Universidade Federal de Sergipe (UFS)</small></li></ul>"
+    "hora_inicio": "08:30",
+    "hora_fim": "11:00",
+    "descricao": "<p><strong>Como os ecossistemas de inovação estão sendo redefinidos por mulheres</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Vagas: 20</strong> | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Pâmela Karolina Dias</strong><br><small style='color: #666;'>Docente | Centro Universitário Tabosa de Almeida (Asces-Unita)</small></li></ul>"
   },
   {
     "dia_evento": 24,
-    "titulo_curto": "OFICINA 3",
+    "titulo_curto": "MINICURSO 2",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "08:15",
-    "hora_fim": "10:30",
-    "descricao": "<p><strong>Construindo projetos de diversidade de gênero na Computação: uma abordagem prática</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Gabriela de Vasconcelos</strong><br><small style='color: #666;'>Docente | Instituto Federal de Alagoas (IFAL), Campus Santana do Ipanema</small></li></ul>"
+    "hora_inicio": "08:30",
+    "hora_fim": "11:00",
+    "descricao": "<p><strong>Como os ecossistemas de inovação estão sendo redefinidos por mulheres</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Vagas: 20</strong> | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Pâmela Karolina Dias</strong><br><small style='color: #666;'>Docente | Centro Universitário Tabosa de Almeida (Asces-Unita)</small></li></ul>"
   },
   {
     "dia_evento": 24,
     "titulo_curto": "MINICURSO 3",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "08:15",
-    "hora_fim": "10:30",
-    "descricao": "<p><strong>Visão Computacional: Ensinando Computadores a Enxergar o Mundo</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Yulle Gustavo Siqueira de Lima</strong><br><small style='color: #666;'>Docente | Instituto Federal de Pernambuco (IFPE), Campus Palmares</small></li></ul>"
+    "hora_inicio": "08:30",
+    "hora_fim": "11:00",
+    "descricao": "<p><strong>Visão Computacional: Ensinando Computadores a Enxergar o Mundo</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala 4 | <strong>Vagas: 30</strong> | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Yulle Gustavo Siqueira de Lima</strong><br><small style='color: #666;'>Docente | Instituto Federal de Pernambuco (IFPE), Campus Palmares</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -206,7 +206,7 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "15:00",
     "hora_fim": "17:30",
-    "descricao": "<p><strong>Modelagem e impressão 3D para prototipagem e maquetes</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Aristófanes Matias Gomes da Silva</strong><br><small style='color: #666;'>Docente | Instituto Federal de Alagoas (IFAL), Campus Maragogi</small></li></ul>"
+    "descricao": "<p><strong>Modelagem e impressão 3D para prototipagem e maquetes</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Vagas: 15</strong> | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Aristófanes Matias Gomes da Silva</strong><br><small style='color: #666;'>Docente | Instituto Federal de Alagoas (IFAL), Campus Maragogi</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -214,7 +214,7 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "15:00",
     "hora_fim": "17:30",
-    "descricao": "<p><strong>Introdução à Programação com Java: do Zero à Prática</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Luis Fernandes</strong><br><small style='color: #666;'>Graduando em Sistemas de Informação | Instituto Federal de Sergipe (IFS), Campus Lagarto</small></li></ul>"
+    "descricao": "<p><strong>Introdução à Programação com Java: do Zero à Prática</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Vagas: 20</strong> | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Luis Fernandes</strong><br><small style='color: #666;'>Graduando em Sistemas de Informação | Instituto Federal de Sergipe (IFS), Campus Lagarto</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -222,7 +222,7 @@
     "nome_evento": "EVENTO PRINCIPAL",
     "hora_inicio": "15:00",
     "hora_fim": "17:30",
-    "descricao": "<p><strong>Explicabilidade em IA: Uma Abordagem Prática com Métricas e Visual Analytics</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Priscylla Maria da Silva Sousa</strong><br><small style='color: #666;'>Docente | Instituto Federal de Alagoas (IFAL), Campus Rio Largo</small></li></ul>"
+    "descricao": "<p><strong>Explicabilidade em IA: Uma Abordagem Prática com Métricas e Visual Analytics</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala 4 | <strong>Vagas: 30</strong> | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Priscylla Maria da Silva Sousa</strong><br><small style='color: #666;'>Docente | Instituto Federal de Alagoas (IFAL), Campus Rio Largo</small></li></ul>"
   },
   {
     "dia_evento": 24,
@@ -252,25 +252,25 @@
     "dia_evento": 25,
     "titulo_curto": "OFICINA 4",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "08:15",
-    "hora_fim": "10:30",
-    "descricao": "<p><strong>Pensamento Computacional e Robótica com LEGO Mindstorms</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Brena Maia Santos</strong><br><small style='color: #666;'>Docente | Instituto Federal do Sertão Pernambucano (IFSertãoPE), Campus Salgueiro</small></li></ul>"
+    "hora_inicio": "08:30",
+    "hora_fim": "11:00",
+    "descricao": "<p><strong>Pensamento Computacional e Robótica com LEGO Mindstorms</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 1 - Espaço 4.0 | <strong>Vagas: 15</strong> | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Brena Maia Santos</strong><br><small style='color: #666;'>Docente | Instituto Federal do Sertão Pernambucano (IFSertãoPE), Campus Salgueiro</small></li></ul>"
   },
   {
     "dia_evento": 25,
     "titulo_curto": "MINICURSO 7",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "08:15",
-    "hora_fim": "10:30",
-    "descricao": "<p><strong>Construção de aplicações interdisciplinares de realidade aumentada com navegadores Web</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Sandro César Silveira Jucá</strong><br><small style='color: #666;'>Docente | Instituto Federal do Ceará (IFCE), Campus Fortaleza</small></li></ul>"
+    "hora_inicio": "08:30",
+    "hora_fim": "11:00",
+    "descricao": "<p><strong>Construção de aplicações interdisciplinares de realidade aumentada com navegadores Web</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 2 - Laboratório 2 de Informática | <strong>Vagas: 20</strong> | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Sandro César Silveira Jucá</strong><br><small style='color: #666;'>Docente | Instituto Federal do Ceará (IFCE), Campus Fortaleza</small></li></ul>"
   },
   {
     "dia_evento": 25,
     "titulo_curto": "MINICURSO 8",
     "nome_evento": "EVENTO PRINCIPAL",
-    "hora_inicio": "08:15",
-    "hora_fim": "10:30",
-    "descricao": "<p><strong>Tecnologias digitais e currículo no contexto da inovação pedagógica: emergências contemporâneas</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala Modular Grande | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Prof. Paulo Brazão, Prof. Alice Mendonça, Prof. Dora Pombo</strong><br><small style='color: #666;'>Universidade da Madeira - Portugal</small></li></ul>"
+    "hora_inicio": "08:30",
+    "hora_fim": "11:00",
+    "descricao": "<p><strong>Tecnologias digitais e currículo no contexto da inovação pedagógica: emergências contemporâneas</strong></p><p style='margin-top: 8px; font-size: 0.9rem; color: #00A2D5;'><i class='fa-solid fa-location-dot'></i> <strong>Local:</strong> Ambiente 3 - Sala 4 | <strong>Vagas: 30</strong> | <strong>Inscrições Encerradas</strong></p><br><ul style='list-style-type: none; padding-left: 0;'><li><i class='fa-solid fa-user-tie' style='color:#00A2D5;'></i> <strong>Prof. Paulo Brazão, Prof. Alice Mendonça</strong><br><small style='color: #666;'>Universidade da Madeira - Portugal</small></li></ul>"
   },
   {
     "dia_evento": 25,

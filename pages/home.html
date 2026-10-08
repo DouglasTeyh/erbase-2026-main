@@ -4,107 +4,88 @@
         <source src="assets/video/video-background.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
-    <img src="assets/img/EDIÇÃO_MARAGOGI.png" alt="ERBASE 2026 - Edição Maragogi" class="hero-img scroll-animate">
 
-    <!-- Countdown Timer -->
-    <div class="countdown-wrapper">
-        <div class="scroll-animate" style="width: 100%;">
-            <h3>O Evento Começa Em</h3>
-            <div id="countdown" class="countdown-grid">
-                <div class="time-box">
-                    <span id="cd-months" class="time-val">00</span>
-                    <span class="time-label">Meses</span>
-                </div>
-                <div class="time-box">
-                    <span id="cd-days" class="time-val">00</span>
-                    <span class="time-label">Dias</span>
-                </div>
-                <div class="time-box">
-                    <span id="cd-hours" class="time-val">00</span>
-                    <span class="time-label">Horas</span>
-                </div>
-                <div class="time-box">
-                    <span id="cd-minutes" class="time-val">00</span>
-                    <span class="time-label">Min</span>
-                </div>
-                <div class="time-box">
-                    <span id="cd-seconds" class="time-val">00</span>
-                    <span class="time-label">Seg</span>
+    <div class="hero-content scroll-animate">
+        <img src="assets/img/EDIÇÃO_MARAGOGI.png" alt="ERBASE 2026 - Edição Maragogi" class="hero-img">
+        <div class="hero-chips">
+            <span class="hero-chip"><i class="fa-solid fa-calendar-days"></i> 23 a 25 de Setembro</span>
+            <span class="hero-chip"><i class="fa-solid fa-location-dot"></i> Maragogi - AL</span>
+            <span class="hero-chip"><i class="fa-solid fa-box-archive"></i> Inscrições Encerradas</span>
+        </div>
+
+        <!-- Ações do Evento -->
+        <div class="event-hero-actions">
+            <div class="event-mapa-wrap">
+                <a id="mapa-evento-link" href="#" class="action-btn event-mapa-btn" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-map-location-dot"></i> VER BANNER DO EVENTO
+                </a>
+
+                <!-- Prévia do panfleto (aparece ao passar o mouse / tocar no botão de mapa) -->
+                <div class="event-mapa-preview" id="mapa-preview">
+                    <div class="event-mapa-preview-head">
+                        <div class="event-mapa-preview-info">
+                            <span class="event-banner-badge">Panfleto do Evento</span>
+                            <p class="event-mapa-preview-hint">Banner do evento com mapa, salas, atividades e programação completa.</p>
+                        </div>
+                        <button type="button" class="event-mapa-preview-close" id="mapa-preview-close"
+                            aria-label="Fechar prévia">
+                            <i class="fa-solid fa-xmark"></i> Fechar
+                        </button>
+                    </div>
+
+                    <div id="event-banner-fallback" class="event-banner-fallback" style="display: none;">
+                        <h3>ERBASE 2026 — Escola Regional de Computação Bahia-Alagoas-Sergipe</h3>
+                        <p>23, 24 e 25 de setembro · Campus Maragogi — AL</p>
+                    </div>
+
+                    <div class="event-mapa-preview-frame">
+                        <figure class="event-banner-page">
+                            <img src="assets/img/banner/banner-pag1.jpg" alt="Panfleto ERBASE 2026 - Página 1"
+                                class="event-banner-img" loading="lazy"
+                                onerror="this.closest('.event-mapa-preview-frame').style.display='none'; document.getElementById('event-banner-fallback').style.display='flex';">
+                        </figure>
+                        <figure class="event-banner-page">
+                            <img src="assets/img/banner/banner-pag2.jpg" alt="Panfleto ERBASE 2026 - Página 2"
+                                class="event-banner-img" loading="lazy"
+                                onerror="this.closest('.event-banner-page').style.display='none';">
+                        </figure>
+                    </div>
+
+                    <div class="event-mapa-preview-footer">
+                        <a class="event-banner-open" href="assets/docs/banner-erbase-2026.pdf" target="_blank"
+                            rel="noopener">
+                            <i class="fa-solid fa-file-pdf"></i> Abrir o panfleto em PDF
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            <a id="fotos-drive-link" href="#" class="action-btn event-fotos-btn">
+                <i class="fa-solid fa-images"></i> VER IMAGENS DO EVENTO
+            </a>
         </div>
     </div>
 </section>
 
 <section id="participe" class="full-width section-padding" style="padding: 100px 0;">
     <div class="container">
-        
-        <!-- Unified Premium Solid Panel -->
-        <div class="unified-solid-panel scroll-animate">
-            
-            <div class="section-title-container text-center" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 40px;">
-                <h2 class="section-title" style="color: #001a4d;">Inscrições no Evento</h2>
+
+        <div class="unified-solid-panel scroll-animate" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+
+            <div style="width: 70px; height: 70px; border-radius: 50%; background: rgba(0, 162, 213, 0.12); display: flex; align-items: center; justify-content: center; color: #00A2D5; font-size: 1.8rem; margin-bottom: 25px;">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div class="section-title-container text-center" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 20px;">
+                <h2 class="section-title" style="color: #001a4d;">Inscrições Encerradas</h2>
                 <div class="section-title-line"></div>
-                <p style="color: #64748b; font-size: 1.1rem; max-width: 700px; margin-top: 15px; line-height: 1.6; text-align: center;">
-                    Garanta sua participação na ERBASE 2026. As inscrições estão no <strong>ÚLTIMO LOTE</strong>.
-                </p>
             </div>
 
-            <div style="max-width: 750px; margin: 0 auto;">
-
-                <!-- Inscrições no Evento (Último Lote) -->
-                <div class="unified-column" style="background: rgba(0, 162, 213, 0.03); border: 1px solid rgba(0, 162, 213, 0.15); border-radius: 20px; padding: 35px;">
-                    <div>
-                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
-                            <div style="width: 50px; height: 50px; border-radius: 12px; background: rgba(0, 242, 165, 0.15); display: flex; align-items: center; justify-content: center; color: #00c887; font-size: 1.3rem;">
-                                <i class="fa-solid fa-ticket"></i>
-                            </div>
-                            <div>
-                                <h3 style="font-size: 1.6rem; font-weight: 800; color: #001a4d; margin: 0;">Inscrições no ECOS — Último Lote</h3>
-                                <span style="font-size: 0.85rem; color: #00c887; font-weight: 700;">Vagas Limitadas</span>
-                            </div>
-                        </div>
-
-                        <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; margin-bottom: 25px; text-align: justify;">
-                            Garanta sua participação na ERBASE 2026. As inscrições são realizadas de forma totalmente segura pelo portal de sistemas ECOS da SBC.
-                        </p>
-
-                        <!-- Highlights -->
-                        <div style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 30px;">
-                            <div style="display: flex; gap: 10px; align-items: flex-start; text-align: left;">
-                                <i class="fa-solid fa-clock" style="color: #00c887; margin-top: 3px;"></i>
-                                <span style="color: #334155; font-size: 0.95rem;">Estamos no <strong>ÚLTIMO LOTE</strong> de inscrições para o evento.</span>
-                            </div>
-                            <div style="display: flex; gap: 10px; align-items: flex-start; padding: 12px; background: rgba(239, 68, 68, 0.05); border-left: 3px solid #ef4444; border-radius: 4px; text-align: left;">
-                                <i class="fa-solid fa-circle-exclamation" style="color: #ef4444; margin-top: 3px;"></i>
-                                <span style="color: #64748b; font-size: 0.85rem; line-height: 1.4; text-align: justify;">Registre sua vaga o quanto antes para garantir o seu certificado e acesso a todas as atividades da programação.</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <a href="https://centraldesistemas.sbc.org.br/ecos/erbase2026" target="_blank" class="action-btn" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #00A2D5, #001a4d); color: white !important; font-size: 1.1rem; padding: 18px;">
-                            Inscrever-se no ECOS <i class="fa-solid fa-arrow-up-right-from-square" style="margin-left: 8px; font-size: 0.9rem;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Divider -->
-            <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 40px 0;">
-
-            <!-- Cancellation Policy Box -->
-            <div class="cancellation-policy-box">
-                <div style="display: flex; align-items: center; gap: 12px;">
-                    <div style="width: 36px; height: 36px; border-radius: 8px; background: rgba(239, 68, 68, 0.1); display: flex; align-items: center; justify-content: center; color: #ef4444; font-size: 1.1rem;">
-                        <i class="fa-solid fa-circle-info"></i>
-                    </div>
-                    <h4 style="font-size: 1.25rem; font-weight: 800; color: #001a4d; margin: 0;">Política de Cancelamento — ERBASE 2026</h4>
-                </div>
-                <p style="color: #64748b; font-size: 0.95rem; line-height: 1.6; margin: 0; text-align: justify; hyphens: auto;">
-                    Até o dia <strong>31/08/2026</strong> (prazo superior a 15 dias e inferior a 30 dias antes da data de início do evento) pode-se fazer uma devolução de 80% (máximo de 80%) do valor pago pela inscrição na XXVI Escola Regional de Computação Bahia-Alagoas-Sergipe (ERBASE 2026). Após esta data não haverá devolução de qualquer valor pago. A política se aplica tanto para o cancelamento da inscrição, quanto para o cancelamento de qualquer atividade adicional. Para solicitar o cancelamento, enviar a solicitação para <a href="mailto:faturamento@sbc.org.br" style="color: #00A2D5; font-weight: 700; text-decoration: underline;">faturamento@sbc.org.br</a>.
-                </p>
-            </div>
+            <p style="color: #64748b; font-size: 1.15rem; max-width: 720px; margin: 0 auto; line-height: 1.7; text-align: center;">
+                As inscrições para a <strong>ERBASE 2026</strong> estão encerradas.
+                Agradecemos a todos pela participação no evento!
+            </p>
 
         </div>
 

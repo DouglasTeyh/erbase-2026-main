@@ -1,0 +1,14 @@
+PREENCHA OS CAMPOS ABAIXO E SALVE ESTE ARQUIVO (ou substitua os valores)
+
+Nome da hospedagem:
+Endereço:
+Telefone / WhatsApp:
+Site ou link de reservas (opcional):
+Preço aprox. (opcional):
+Observações (opcional):
+
+IMAGEM:
+Coloque o arquivo da foto nesta mesma pasta (entregas/) com um nome simples,
+ex: minha-pousada.jpg  --> e escreva o nome do arquivo abaixo:
+
+Arquivo da imagem:

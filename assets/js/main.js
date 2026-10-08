@@ -98,6 +98,7 @@ async function loadInitialPage(page) {
         if (page === 'home' || page === '') {
             await loadAndRenderSchedule();
             await loadAndRenderSpeakersCarousel();
+            initEventLinks();
         } else if (page === 'admin') {
             initAdminPanel();
         }
@@ -1530,43 +1531,74 @@ function initEpicDeveloperAnimations() {
     setTimeout(() => ScrollTrigger.refresh(), 2000);
 }
 
-function initCountdownTimer() {
-    const targetDate = new Date("2026-09-23T08:00:00-03:00").getTime();
+async function initEventLinks() {
+    const fotosLink = document.getElementById('fotos-drive-link');
+    const mapaLink = document.getElementById('mapa-evento-link');
 
-    setInterval(() => {
-        const now = new Date().getTime();
-        const distance = targetDate - now;
+    initEventPreviewToggle();
 
-        if (distance < 0) {
-            const monthsEl = document.getElementById("cd-months");
-            if(monthsEl) {
-                document.getElementById("cd-months").innerText = "00";
-                document.getElementById("cd-days").innerText = "00";
-                document.getElementById("cd-hours").innerText = "00";
-                document.getElementById("cd-minutes").innerText = "00";
-                document.getElementById("cd-seconds").innerText = "00";
-            }
-            return;
+    let links = {};
+    try {
+        const response = await fetch(`assets/data/links.json?t=${new Date().getTime()}`);
+        if (!response.ok) throw new Error('links.json não encontrado');
+        links = await response.json();
+    } catch (error) {
+        console.error('Falha ao carregar links do evento:', error);
+    }
+
+    if (fotosLink) {
+        if (links.fotos) {
+            fotosLink.href = links.fotos;
+            fotosLink.target = '_blank';
+            fotosLink.rel = 'noopener';
+        } else {
+            fotosLink.classList.add('event-fotos-btn--pending');
+            fotosLink.innerHTML = '<i class="fa-solid fa-images"></i> Imagens em breve';
         }
+    }
 
-        const months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30.44));
-        const days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        const monthsEl = document.getElementById("cd-months");
-        if (monthsEl) {
-            monthsEl.innerText = months.toString().padStart(2, '0');
-            document.getElementById("cd-days").innerText = days.toString().padStart(2, '0');
-            document.getElementById("cd-hours").innerText = hours.toString().padStart(2, '0');
-            document.getElementById("cd-minutes").innerText = minutes.toString().padStart(2, '0');
-            document.getElementById("cd-seconds").innerText = seconds.toString().padStart(2, '0');
+    if (mapaLink) {
+        if (links.mapa) {
+            mapaLink.href = links.mapa;
+            mapaLink.target = '_blank';
+            mapaLink.rel = 'noopener';
+        } else {
+            mapaLink.classList.add('event-mapa-btn--pending');
+            mapaLink.innerHTML = '<i class="fa-solid fa-map-location-dot"></i> Banner em breve';
         }
-    }, 1000);
+    }
 }
 
-initCountdownTimer();
+function initEventPreviewToggle() {
+    const wrap = document.querySelector('.event-mapa-wrap');
+    const btn = document.getElementById('mapa-evento-link');
+    const close = document.getElementById('mapa-preview-close');
+    if (!wrap || !btn) return;
+
+    const isTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    if (!isTouch) return;
+
+    function setOpen(open, event) {
+        wrap.classList.toggle('event-mapa-wrap--open', open);
+        btn.setAttribute('aria-expanded', String(open));
+        if (event) event.preventDefault();
+    }
+
+    btn.addEventListener('click', (event) => {
+        setOpen(!wrap.classList.contains('event-mapa-wrap--open'), event);
+    });
+
+    if (close) {
+        close.addEventListener('click', (event) => {
+            event.stopPropagation();
+            setOpen(false);
+        });
+    }
+
+    document.addEventListener('click', (event) => {
+        if (!wrap.contains(event.target)) setOpen(false);
+    });
+}
 
 window.copyCouponAndRedirect = function(coupon, redirectUrl) {
     if (navigator.clipboard && navigator.clipboard.writeText) {
